@@ -1,0 +1,22 @@
+logging:
+  version: 1
+  disable_existing_loggers: false
+
+  formatters:
+    simple:
+      format: "%(asctime)s;%(levelname)s;%(message)s"
+
+  handlers:
+    console:
+      class: logging.StreamHandler
+      formatter: simple
+
+    file:
+      class: logging.FileHandler
+      formatter: simple
+      filename: "logs/parsers.log"
+      encoding: utf-8
+
+  root:
+    level: INFO
+    handlers: [console, file]

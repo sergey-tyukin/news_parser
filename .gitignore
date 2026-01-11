@@ -1,0 +1,17 @@
+/.idea/
+
+/.venv/
+__pycache__/
+
+config/secrets.yaml
+
+data/processed/*
+data/raw/*
+data/sessions/*
+
+logs/*
+
+src/sentiment/*
+src/sentiment/.rubert-tiny2-russian-financial-sentiment/*
+
+!**/.gitkeep
