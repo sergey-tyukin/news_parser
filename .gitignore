@@ -4,6 +4,7 @@
 __pycache__/
 
 config/secrets.yaml
+config/telegram_channels.yaml
 
 data/processed/*
 data/raw/*

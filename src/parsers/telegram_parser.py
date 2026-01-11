@@ -1,16 +1,13 @@
 from telethon import TelegramClient, events
 import asyncio
 import json
+import yaml
 import logging
 
 from src.utils.config_loader import setup_logging, load_secrets, PROJECT_ROOT
 
 
-CHANNELS = [
-    'https://t.me/AK47pfl',
-    'https://t.me/finpizdec',
-]
-
+INPUT_FILE = PROJECT_ROOT / "config" / "telegram_channels.yaml"
 OUTPUT_FILE = PROJECT_ROOT / "data" / "raw" / "news.json"
 SESSION_FILE = PROJECT_ROOT / "data" / "sessions" / "telegram_parser"
 
@@ -24,6 +21,9 @@ async def main():
 
     await client.start(phone=secrets["telegram"]["phone"])
     logger.info("Клиент для парсинга новостей из Telegram запущен!")
+
+    with open(INPUT_FILE, 'r', encoding='utf-8') as f:
+        CHANNELS = [url.strip() for url in yaml.safe_load(f) if isinstance(url, str)]
 
     # Загружаем существующие новости, чтобы определить последний ID по каждому каналу
     existing_news = []
