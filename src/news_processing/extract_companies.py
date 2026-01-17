@@ -28,9 +28,9 @@ def extract_companies():
     setup_logging('extract_companies.log')
     logger = logging.getLogger(__name__)
 
-    input_file = PROJECT_ROOT / "data" / "raw" / "news.json"
-    companies_file = PROJECT_ROOT / "data" / "reference" / "companies.json"
+    input_file = PROJECT_ROOT / "data" / "processed" / "news_without_links.json"
     output_file = PROJECT_ROOT / "data" / "processed" / "news_with_companies.json"
+    companies_file = PROJECT_ROOT / "data" / "reference" / "companies.json"
 
     logger.info("Запуск извлечения упоминаний компаний из новостей")
 
@@ -62,8 +62,6 @@ def extract_companies():
 
     # with open(output_file, 'w', encoding='utf-8') as f:
     #     json.dump(news, f, ensure_ascii=False, indent=2)
-
-    logger.info(f"Данные успешно сохранены в {output_file}")
 
     logger.info("Этап извлечения компаний завершён.")
 

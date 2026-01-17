@@ -6,7 +6,7 @@ from src.utils.config_loader import setup_logging, PROJECT_ROOT
 
 
 def get_sentiment():
-    input_file = PROJECT_ROOT / "data" / "raw" / "news.json"
+    input_file = PROJECT_ROOT / "data" / "processed" / "news_with_companies.json"
     output_file = PROJECT_ROOT / "data" / "processed" / "news_sentiment.json"
 
     setup_logging("sentiment.log")
@@ -38,6 +38,7 @@ def get_sentiment():
                 "text": text,
                 "date": item["date"],
                 "link": item["link"],
+                "mentioned_companies": item["mentioned_companies"],
                 "sentiment_label": result["label"],
                 "sentiment_score": round(result["score"], 4)
             }

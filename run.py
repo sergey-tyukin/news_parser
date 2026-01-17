@@ -1,5 +1,8 @@
-from src.parsers.telegram_parser import run_telegram_parser
-from src.sentiment.sentiment import get_sentiment
+from src.parsers import telegram_parser
+from src.news_processing import remove_links, extract_companies
+from src.sentiment import sentiment
 
-run_telegram_parser()
-get_sentiment()
+telegram_parser.run_telegram_parser()
+remove_links.remove_links()
+extract_companies.extract_companies()
+sentiment.get_sentiment()
