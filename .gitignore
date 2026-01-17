@@ -9,6 +9,7 @@ config/telegram_channels.yaml
 data/processed/*
 data/raw/*
 data/sessions/*
+data/reference/*
 
 logs/*
 
