@@ -3,7 +3,7 @@
 /.venv/
 __pycache__/
 
-config/secrets.yaml
+secrets/secrets.yaml
 config/telegram_channels.yaml
 
 data/processed/*

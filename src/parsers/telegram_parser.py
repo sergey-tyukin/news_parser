@@ -19,7 +19,7 @@ async def fetch_telegram_news(secrets, session_file, channels, last_ids, logger)
     for channel in channels:
         try:
             entity = await client.get_entity(channel)
-            messages = await client.get_messages(entity, limit=50)
+            messages = await client.get_messages(entity, limit=100)
 
             channel_title = entity.title
             last_id = last_ids.get(channel_title, 0)

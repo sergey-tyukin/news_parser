@@ -5,7 +5,9 @@ from logging.config import dictConfig
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 
 CONFIG_DIR = PROJECT_ROOT / "config"
-SECRETS_PATH = CONFIG_DIR / "secrets.yaml"
+SECRETS_DIR = PROJECT_ROOT / "secrets"
+
+SECRETS_PATH = SECRETS_DIR / "secrets.yaml"
 CONFIG_PATH = CONFIG_DIR / "config.yaml"
 
 
