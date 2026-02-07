@@ -3,7 +3,6 @@
 /.venv/
 __pycache__/
 
-secrets/secrets.yaml
 config/telegram_channels.yaml
 
 data/processed/*
@@ -12,6 +11,10 @@ data/sessions/*
 data/reference/*
 
 logs/*
+
+output/tables/*
+
+secrets/secrets.yaml
 
 src/sentiment/.rubert-tiny2-russian-financial-sentiment/*
 
