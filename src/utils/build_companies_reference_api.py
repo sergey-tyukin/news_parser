@@ -51,7 +51,7 @@ def main():
 
     logger.info(f'{len(df)} компаний записано в {output_path_xlsx}')
 
-    result = []
+    result = {}
     for _, row in df.iterrows():
         if row['SECTYPE'] == '1':
             sec_type = '_ord'
@@ -61,8 +61,7 @@ def main():
             sec_type = ''
 
         if sec_type:
-            result.append({
-                row['SECID']: {
+            result[row['SECID']] = {
                     'name': clean_name(row['SECNAME']),
                     'level': row['LISTLEVEL'],
                     'ticker' + sec_type: row['SECID'],
@@ -70,9 +69,9 @@ def main():
                     'lotsize' + sec_type: int(row['LOTSIZE']),
                     'minstep' + sec_type: int(row['MINSTEP']),
                     'issuesize' + sec_type: int(row['ISSUESIZE']),
-                    'searchnames': [row['SECID'], row['ISIN'], extract_name(row['SECNAME']), row['SHORTNAME'], row['LATNAME']]
-                }
-            })
+                    'searchnames': [row['SECID'].lower(), row['ISIN'].lower(), extract_name(row['SECNAME']).lower(),
+                                    row['SHORTNAME'].lower(), row['LATNAME'].lower()]
+            }
 
     with open(output_path_json, 'w', encoding='utf-8') as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
