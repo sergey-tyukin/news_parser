@@ -1,24 +1,31 @@
 # Скрипт для первоначальной генерации справочника компаний из данных, получаемых по API
 # После генерации файл data/reference/companies_raw.json может редактироваться вручную.
+# Значение поля SecType можно найти здесь: https://www.moex.com/ru/SecuritiesListing.aspx
+
 import pandas as pd
 import logging
 import http.client
 import json
 import re
-from moexalgo import session, Market, Ticker
 from src.utils.config_loader import setup_logging, load_secrets, PROJECT_ROOT
 
 
-def extract_canonical_name(full_name):
+def extract_name(name):
     """Извлекаем текст из двойных кавычек (если они есть)"""
-    if not isinstance(full_name, str):
-        return str(full_name).strip()
-    match = re.search(r'"([^"]+)"', full_name)
+    if not isinstance(name, str):
+        return str(name).strip()
+    match = re.search(r'"([^"]+)"', name)
     if match:
         return match.group(1).strip()
     else:
-        return full_name.strip()
+        return name.strip()
 
+def clean_name(name):
+    """Убирает ао, ап и т.д."""
+    name = name.replace('-ао', '').replace(' ао', '').replace('ао', '')
+    name = name.replace('-ап', '').replace(' ап', '').replace('ап', '')
+    name = name.replace('"', '').replace("'", "")
+    return name
 
 def main():
     setup_logging('import.log')
@@ -46,20 +53,26 @@ def main():
 
     result = []
     for _, row in df.iterrows():
-        result.append({
-            row['SECID']: {
-                'ticker': row['SECID'],
-                'name': row['SECNAME'],
-                'shortname': row['SHORTNAME'],
-                'latname': row['LATNAME'],
-                'isin': row['ISIN'],
-                'level': row['LISTLEVEL'],
-                'lotsize': int(row['LOTSIZE']),
-                'minstep': int(row['MINSTEP']),
-                'issuesize': int(row['ISSUESIZE']),
-                'searchnames': [row['SECID'], row['ISIN'], extract_canonical_name(row['SECNAME']), row['SHORTNAME'], row['LATNAME']]
-            }
-        })
+        if row['SECTYPE'] == '1':
+            sec_type = '_ord'
+        elif row['SECTYPE'] == '2':
+            sec_type = '_pref'
+        else:
+            sec_type = ''
+
+        if sec_type:
+            result.append({
+                row['SECID']: {
+                    'name': clean_name(row['SECNAME']),
+                    'level': row['LISTLEVEL'],
+                    'ticker' + sec_type: row['SECID'],
+                    'isin' + sec_type: row['ISIN'],
+                    'lotsize' + sec_type: int(row['LOTSIZE']),
+                    'minstep' + sec_type: int(row['MINSTEP']),
+                    'issuesize' + sec_type: int(row['ISSUESIZE']),
+                    'searchnames': [row['SECID'], row['ISIN'], extract_name(row['SECNAME']), row['SHORTNAME'], row['LATNAME']]
+                }
+            })
 
     with open(output_path_json, 'w', encoding='utf-8') as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
