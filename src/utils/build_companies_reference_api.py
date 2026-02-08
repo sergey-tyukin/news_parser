@@ -31,7 +31,7 @@ def main():
     setup_logging('import.log')
     logger = logging.getLogger(__name__)
 
-    output_path_json = PROJECT_ROOT / "data" / "reference" / "companies_raw.json"
+    output_path_json = PROJECT_ROOT / "data" / "raw" / "companies_raw.json"
     output_path_xlsx = PROJECT_ROOT / "output" / "tables" / "companies.xlsx"
 
     secrets = load_secrets()
@@ -63,9 +63,9 @@ def main():
         if sec_type:
             result[row['SECID']] = {
                     'name': clean_name(row['SECNAME']),
-                    'level': row['LISTLEVEL'],
                     'ticker' + sec_type: row['SECID'],
                     'isin' + sec_type: row['ISIN'],
+                    'level' + sec_type: row['LISTLEVEL'],
                     'lotsize' + sec_type: int(row['LOTSIZE']),
                     'minstep' + sec_type: int(row['MINSTEP']),
                     'issuesize' + sec_type: int(row['ISSUESIZE']),
