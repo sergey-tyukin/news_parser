@@ -38,6 +38,12 @@ def get_spread(secrets, ticker, start_date, end_date):
         # подчищаем полностью пустые столбцы, чтобы корректно работал pd.concat
         dfs_cleaned = [df.dropna(axis=1, how='all') for df in dfs if not df.empty]
         result = pd.concat(dfs_cleaned, ignore_index=True) if dfs_cleaned else pd.DataFrame()
+
+        if not result.empty:
+            result = result.rename(columns={'tradedate': 'date'})
+            result['date'] = pd.to_datetime(result['date']).dt.date
+            result['tradetime'] = pd.to_timedelta(result['tradetime'])
+
     return result
 
 
@@ -52,10 +58,10 @@ if __name__ == "__main__":
 
     secrets = load_secrets()
 
-    start_date = datetime(2019, 1, 1)
+    start_date = datetime(2020, 1, 1)  # данные хранятся только с 2020 года
     end_date = datetime(2026, 2, 28)
 
-    for ticker in companies:
+    for ticker in companies[]:
 
         spread = get_spread(secrets, ticker, start_date, end_date)
 
@@ -63,16 +69,16 @@ if __name__ == "__main__":
         output_dir_main = PROJECT_ROOT / "data" / "processed" / "daily_spread_main"
 
         # Весь день
-        spread_daily = spread.groupby('tradedate', as_index=False).median(numeric_only=True)
-        feather.write_feather(spread_daily, output_dir / f'{ticker}.feather')
+        spread_daily = spread.groupby('date', as_index=False).median(numeric_only=True)
+        spread_daily.to_parquet(output_dir / f'{ticker}.parquet', engine="pyarrow")
         spread_daily.to_excel(output_dir / f'{ticker}.xlsx', index=False)
 
         # Основная торговая сессия
         spread_daily_main = spread[
-            (spread['tradetime'] >= '10:05:00') &
-            (spread['tradetime'] <= '18:40:00')
+            (spread['tradetime'] >= pd.Timedelta('10:05:00')) &
+            (spread['tradetime'] <= pd.Timedelta('18:40:00'))
             ]
 
-        spread_daily_main = spread_daily_main.groupby('tradedate', as_index=False).median(numeric_only=True)
-        feather.write_feather(spread_daily_main, output_dir_main / f'{ticker}.feather')
+        spread_daily_main = spread_daily_main.groupby('date', as_index=False).median(numeric_only=True)
+        spread_daily.to_parquet(output_dir / f'{ticker}.parquet', engine="pyarrow")
         spread_daily_main.to_excel(output_dir_main / f'{ticker}.xlsx', index=False)
