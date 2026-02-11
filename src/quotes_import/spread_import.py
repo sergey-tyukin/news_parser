@@ -4,7 +4,6 @@ import json
 from datetime import datetime
 from calendar import monthrange
 from moexalgo import session, Market, Ticker
-import pyarrow.feather as feather
 from src.utils.config_loader import setup_logging, load_secrets, PROJECT_ROOT
 
 
@@ -61,7 +60,7 @@ if __name__ == "__main__":
     start_date = datetime(2020, 1, 1)  # данные хранятся только с 2020 года
     end_date = datetime(2026, 2, 28)
 
-    for ticker in companies[]:
+    for ticker in companies:
 
         spread = get_spread(secrets, ticker, start_date, end_date)
 
