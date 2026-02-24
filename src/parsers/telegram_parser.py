@@ -1,28 +1,47 @@
 from telethon import TelegramClient, events
 import asyncio
-import json
-import yaml
+import sqlite3
 import logging
-
-
 from src.utils.config_loader import setup_logging, load_secrets, PROJECT_ROOT
 
 
-async def fetch_telegram_news(secrets, session_file, channels, last_ids, logger):
+def execute_sql_query(cursor, sql_query, sql_query_descr, sql_query_params, logger):
+    try:
+        cursor.execute(sql_query, sql_query_params)
+        logger.info(f'Выполнен запрос: {sql_query_descr}')
+    except sqlite3.Error as e:
+        logger.info(f'Запрос {sql_query_descr} не выполнен. Ошибка: {e}')
+
+
+async def fetch_telegram_news(secrets, session_file, logger, conn):
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT id, link, name FROM channels")
+    channels = cursor.fetchall()
+    print(channels)
+    print(type(channels))
+
     client = TelegramClient(session_file, secrets["telegram"]["api_id"], secrets["telegram"]["api_hash"])
 
     await client.start(phone=secrets["telegram"]["phone"])
     logger.info("Клиент для парсинга новостей из Telegram запущен!")
 
-    news = []
-
     for channel in channels:
+
+        sql_query = f'''
+            SELECT MAX(message_id) FROM news
+            INNER  JOIN channels ON news.channel_id = channels.id
+            WHERE channels.id = {channel[0]};
+        '''
+        cursor.execute(sql_query)
+        result = cursor.fetchone()
+        last_id = result[0] if result and result[0] else 0
+
         try:
-            entity = await client.get_entity(channel)
+            entity = await client.get_entity(channel[1])
             messages = await client.get_messages(entity, limit=100)
 
             channel_title = entity.title
-            last_id = last_ids.get(channel_title, 0)
 
             added = 0
 
@@ -31,13 +50,19 @@ async def fetch_telegram_news(secrets, session_file, channels, last_ids, logger)
                     break
                 if msg.text is not None and msg.text.strip():
                     news_item = {
-                        'channel': entity.title,
+                        'channel_id': channel[0],
                         'message_id': msg.id,
-                        'text': msg.text,
+                        'text_original': msg.text,
                         'date': msg.date.isoformat(),
                         'link': f'https://t.me/{entity.username}/{msg.id}'
                     }
-                    news.append(news_item)
+
+                    sql_query_descr = f'Парсинг и добавление новости "{msg.id}" с канала "{channel[1]}"'
+                    sql_query = ('''INSERT INTO news (channel_id, message_id, text_original, date, link)
+                                 VALUES (:channel_id, :message_id, :text_original, :date, :link)''')
+                    execute_sql_query(cursor, sql_query, sql_query_descr, news_item, logger)
+                    conn.commit()
+
                     added += 1
             logger.info(f"Найдено {added} новых сообщений в {channel_title}")
 
@@ -45,52 +70,25 @@ async def fetch_telegram_news(secrets, session_file, channels, last_ids, logger)
             logger.error(f"Ошибка при парсинге {channel}: {e}")
 
     await client.disconnect()
-    return news
+    return
 
 
 def run_telegram_parser():
     setup_logging('parser.log')
     logger = logging.getLogger(__name__)
 
-    input_file = PROJECT_ROOT / "config" / "telegram_channels.yaml"
-    output_file = PROJECT_ROOT / "data" / "raw" / "news.json"
+    db_file = PROJECT_ROOT / "data" / "news.sqlite"
     session_file = PROJECT_ROOT / "data" / "sessions" / "telegram_parser"
     secrets = load_secrets()
 
-    with open(input_file, 'r', encoding='utf-8') as f:
-        channels = [url.strip() for url in yaml.safe_load(f) if isinstance(url, str)]
+    conn = sqlite3.connect(db_file)
 
-    # Загружаем существующие новости, чтобы определить последний ID по каждому каналу
-    existing_news = []
-    if output_file.exists():
-        with open(output_file, 'r', encoding='utf-8') as f:
-            existing_news = json.load(f)
-
-    # Собираем последние ID
-    last_ids = {}
-    for item in existing_news:
-        channel = item['channel']
-        msg_id = item['message_id']
-        if channel not in last_ids or msg_id > last_ids[channel]:
-            last_ids[channel] = msg_id
-
-    news = asyncio.run(fetch_telegram_news(
+    asyncio.run(fetch_telegram_news(
         secrets=secrets,
         session_file=session_file,
-        channels=channels,
-        last_ids=last_ids,
-        logger=logger
+        logger=logger,
+        conn=conn
     ))
-
-    if len(news) > 0:
-        all_news = existing_news + news
-
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(all_news, f, ensure_ascii=False, indent=2)
-
-        logger.info(f"Сохранено {len(news)} новостей из {len(channels)} в {output_file}")
-    else:
-        logger.info(f"Файл {output_file} оставлен без изменений")
 
 
 if __name__ == '__main__':

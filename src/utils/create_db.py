@@ -51,7 +51,7 @@ def main():
         text_processed TEXT,
         date DATETIME NOT NULL,
         link TEXT,
-        mentioned_companies TEXT,  -- JSON-массив упоминаемых компаний
+        mentioned_companies TEXT,
         sentiment_label_id INTEGER REFERENCES sentiment_label(id),
         sentiment_score REAL CHECK(sentiment_score BETWEEN -1 AND 1),
         UNIQUE(channel_id, message_id)
