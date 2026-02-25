@@ -10,6 +10,8 @@ SECRETS_DIR = PROJECT_ROOT / "secrets"
 SECRETS_PATH = SECRETS_DIR / "secrets.yaml"
 CONFIG_PATH = CONFIG_DIR / "config.yaml"
 
+DB_PATH = PROJECT_ROOT / "data" / "news.sqlite"
+
 
 def load_yaml(path: Path):
     """Вспомогательная функция для безопасной загрузки YAML."""
@@ -25,7 +27,7 @@ def load_config():
 
 
 def load_secrets():
-    """Загружает секреты. Вызывает исключение, если файл отсутствует."""
+    """Загружает секреты."""
     return load_yaml(SECRETS_PATH)
 
 

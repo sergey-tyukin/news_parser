@@ -2,7 +2,7 @@ from telethon import TelegramClient, events
 import asyncio
 import sqlite3
 import logging
-from src.utils.config_loader import setup_logging, load_secrets, PROJECT_ROOT
+from src.utils.config_loader import setup_logging, load_secrets, PROJECT_ROOT, DB_PATH
 
 
 def execute_sql_query(cursor, sql_query, sql_query_descr, sql_query_params, logger):
@@ -18,8 +18,6 @@ async def fetch_telegram_news(secrets, session_file, logger, conn):
 
     cursor.execute("SELECT id, link, name FROM channels")
     channels = cursor.fetchall()
-    print(channels)
-    print(type(channels))
 
     client = TelegramClient(session_file, secrets["telegram"]["api_id"], secrets["telegram"]["api_hash"])
 
@@ -64,7 +62,7 @@ async def fetch_telegram_news(secrets, session_file, logger, conn):
                     conn.commit()
 
                     added += 1
-            logger.info(f"Найдено {added} новых сообщений в {channel_title}")
+            logger.info(f"Найдено {added} новых сообщений в канале {channel[2]} ({channel[1]}).")
 
         except Exception as e:
             logger.error(f"Ошибка при парсинге {channel}: {e}")
@@ -77,11 +75,10 @@ def run_telegram_parser():
     setup_logging('parser.log')
     logger = logging.getLogger(__name__)
 
-    db_file = PROJECT_ROOT / "data" / "news.sqlite"
     session_file = PROJECT_ROOT / "data" / "sessions" / "telegram_parser"
     secrets = load_secrets()
 
-    conn = sqlite3.connect(db_file)
+    conn = sqlite3.connect(DB_PATH)
 
     asyncio.run(fetch_telegram_news(
         secrets=secrets,
