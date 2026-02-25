@@ -2,21 +2,17 @@ from telethon import TelegramClient, events
 import asyncio
 import sqlite3
 import logging
-from src.utils.config_loader import setup_logging, load_secrets, PROJECT_ROOT, DB_PATH
-
-
-def execute_sql_query(cursor, sql_query, sql_query_descr, sql_query_params, logger):
-    try:
-        cursor.execute(sql_query, sql_query_params)
-        logger.info(f'Выполнен запрос: {sql_query_descr}')
-    except sqlite3.Error as e:
-        logger.info(f'Запрос {sql_query_descr} не выполнен. Ошибка: {e}')
+from src.utils.config_loader import setup_logging, load_secrets, execute_sql_query, PROJECT_ROOT, DB_PATH
 
 
 async def fetch_telegram_news(secrets, session_file, logger, conn):
     cursor = conn.cursor()
 
-    cursor.execute("SELECT id, link, name FROM channels")
+    sql_query = "SELECT id, link, name FROM channels"
+    sql_query_descr = "Получение списка каналов"
+    # cursor.execute("SELECT id, link, name FROM channels")
+    execute_sql_query(cursor, sql_query, sql_query_descr, (), logger)
+
     channels = cursor.fetchall()
 
     client = TelegramClient(session_file, secrets["telegram"]["api_id"], secrets["telegram"]["api_hash"])
@@ -31,15 +27,16 @@ async def fetch_telegram_news(secrets, session_file, logger, conn):
             INNER  JOIN channels ON news.channel_id = channels.id
             WHERE channels.id = {channel[0]};
         '''
-        cursor.execute(sql_query)
+        sql_query_descr = f'Получение максимальной новости по каналу {channel[1]}'
+
+        # cursor.execute(sql_query)
+        execute_sql_query(cursor, sql_query, sql_query_descr, (), logger)
         result = cursor.fetchone()
         last_id = result[0] if result and result[0] else 0
 
         try:
             entity = await client.get_entity(channel[1])
             messages = await client.get_messages(entity, limit=100)
-
-            channel_title = entity.title
 
             added = 0
 
@@ -58,7 +55,7 @@ async def fetch_telegram_news(secrets, session_file, logger, conn):
                     sql_query_descr = f'Парсинг и добавление новости "{msg.id}" с канала "{channel[1]}"'
                     sql_query = ('''INSERT INTO news (channel_id, message_id, text_original, date, link)
                                  VALUES (:channel_id, :message_id, :text_original, :date, :link)''')
-                    execute_sql_query(cursor, sql_query, sql_query_descr, news_item, logger)
+                    cursor = execute_sql_query(cursor, sql_query, sql_query_descr, news_item, logger)
                     conn.commit()
 
                     added += 1

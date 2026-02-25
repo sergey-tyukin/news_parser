@@ -1,4 +1,5 @@
 import yaml
+import sqlite3
 from pathlib import Path
 from logging.config import dictConfig
 
@@ -11,6 +12,16 @@ SECRETS_PATH = SECRETS_DIR / "secrets.yaml"
 CONFIG_PATH = CONFIG_DIR / "config.yaml"
 
 DB_PATH = PROJECT_ROOT / "data" / "news.sqlite"
+
+
+def execute_sql_query(cursor, sql_query, sql_query_descr, sql_query_params, logger):
+    """Функция для выполнения SQL-запросов."""
+    try:
+        cursor.execute(sql_query, sql_query_params)
+        return cursor
+    except sqlite3.Error as e:
+        logger.error(f'Запрос "{sql_query_descr}" не выполнен. Ошибка: {e}')
+        raise
 
 
 def load_yaml(path: Path):
