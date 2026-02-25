@@ -1,6 +1,6 @@
 import sqlite3
 import logging
-from src.utils.config_loader import setup_logging, PROJECT_ROOT
+from src.utils.config_loader import setup_logging, PROJECT_ROOT, DB_PATH
 
 
 def execute_sql_query(cursor, sql_query, sql_query_descr, logger):
@@ -14,8 +14,7 @@ def main():
     setup_logging('db_create.log')
     logger = logging.getLogger(__name__)
 
-    db_file = PROJECT_ROOT / "data" / "news.sqlite"
-    conn = sqlite3.connect(db_file)
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
     sql_query_descr = 'Включение поддержки внешних ключей'

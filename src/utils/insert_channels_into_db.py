@@ -4,7 +4,7 @@ import yaml
 import asyncio
 from telethon import TelegramClient
 from telethon.tl.types import Channel
-from src.utils.config_loader import setup_logging, PROJECT_ROOT, load_secrets
+from src.utils.config_loader import setup_logging, PROJECT_ROOT, load_secrets, DB_PATH
 
 
 async def get_channel_title(secrets, session_file, link):
@@ -35,9 +35,8 @@ def main():
 
     session_file = PROJECT_ROOT / "data" / "sessions" / "telegram_parser"
     channels_file = PROJECT_ROOT / "config" / "telegram_channels.yaml"
-    db_file = PROJECT_ROOT / "data" / "news.sqlite"
 
-    conn = sqlite3.connect(db_file)
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
     with open(channels_file, 'r', encoding='utf-8') as f:
