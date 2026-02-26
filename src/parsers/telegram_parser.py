@@ -5,12 +5,14 @@ import logging
 from src.utils.config_loader import setup_logging, load_secrets, execute_sql_query, PROJECT_ROOT, DB_PATH
 
 
+PARSING_DEPTH = 1000
+
+
 async def fetch_telegram_news(secrets, session_file, logger, conn):
     cursor = conn.cursor()
 
     sql_query = "SELECT id, link, name FROM channels"
     sql_query_descr = "Получение списка каналов"
-    # cursor.execute("SELECT id, link, name FROM channels")
     execute_sql_query(cursor, sql_query, sql_query_descr, (), logger)
 
     channels = cursor.fetchall()
@@ -29,14 +31,15 @@ async def fetch_telegram_news(secrets, session_file, logger, conn):
         '''
         sql_query_descr = f'Получение максимальной новости по каналу {channel[1]}'
 
-        # cursor.execute(sql_query)
         execute_sql_query(cursor, sql_query, sql_query_descr, (), logger)
         result = cursor.fetchone()
         last_id = result[0] if result and result[0] else 0
 
+        logger.info(f'Канал {channel[2]} ({channel[1]}): начинаем парсинг, текущий максимальный ID новости {last_id}')
+
         try:
             entity = await client.get_entity(channel[1])
-            messages = await client.get_messages(entity, limit=100)
+            messages = await client.get_messages(entity, limit=PARSING_DEPTH)
 
             added = 0
 
@@ -56,10 +59,15 @@ async def fetch_telegram_news(secrets, session_file, logger, conn):
                     sql_query = ('''INSERT INTO news (channel_id, message_id, text_original, date, link)
                                  VALUES (:channel_id, :message_id, :text_original, :date, :link)''')
                     cursor = execute_sql_query(cursor, sql_query, sql_query_descr, news_item, logger)
-                    conn.commit()
 
                     added += 1
-            logger.info(f"Найдено {added} новых сообщений в канале {channel[2]} ({channel[1]}).")
+
+                    if added % 1000 == 0:
+                        conn.commit()
+                        logger.info(f"Канал {channel[2]} ({channel[1]}): промежуточный commit, добавлено {added} новостей.")
+
+            conn.commit()
+            logger.info(f"Канал {channel[2]} ({channel[1]}): найдено {added} новых сообщений.")
 
         except Exception as e:
             logger.error(f"Ошибка при парсинге {channel}: {e}")
