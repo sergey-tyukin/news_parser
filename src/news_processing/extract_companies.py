@@ -1,8 +1,9 @@
 import json
 import logging
 import re
+import sqlite3
 from tqdm import tqdm
-from src.utils.config_loader import setup_logging, PROJECT_ROOT
+from src.utils.config_loader import setup_logging, execute_sql_query, PROJECT_ROOT, DB_PATH
 
 
 def build_alias_to_canonical(companies_dict):
@@ -34,42 +35,48 @@ def extract_companies():
     setup_logging('extract_companies.log')
     logger = logging.getLogger(__name__)
 
-    input_file = PROJECT_ROOT / "data" / "processed" / "news_without_links.json"
-    output_file = PROJECT_ROOT / "data" / "processed" / "news_with_companies.json"
     companies_file = PROJECT_ROOT / "data" / "reference" / "companies.json"
 
-    logger.info("Запуск извлечения упоминаний компаний из новостей")
+    conn = sqlite3.connect(DB_PATH)
+    read_cursor = conn.cursor()
+    write_cursor = conn.cursor()
 
-    with open(input_file, 'r', encoding='utf-8') as f:
-        news =  json.load(f)
+    logger.info("Запуск поиска упоминаний компаний в новостях")
+
     with open(companies_file, 'r', encoding='utf-8') as f:
         companies =  json.load(f)
-
     alias_to_canonical = build_alias_to_canonical(companies)
-    print(alias_to_canonical)
     logger.info(f"Загружено {len(companies)} компаний с общим числом алиасов: {len(alias_to_canonical)}")
-    logger.info(f"Загружено {len(news)} новостей")
 
-    news_with_companies = []
+    sql_query = """
+        SELECT id, text_processed
+        FROM news;
+    """
+    sql_query_descr = "Получение списка новостей"
+    execute_sql_query(read_cursor, sql_query, sql_query_descr, (), logger)
+
     total_mentions = 0
 
-    for item in tqdm(news, desc='Обработка новостей'):
-        text = item.get("text", "")
+    for item in tqdm(read_cursor, desc='Обработка новостей') :
+        text = item[1]
         mentioned = find_mentioned_companies(text, alias_to_canonical)
+
+
         if mentioned and len(mentioned) <= 3:
-            item["mentioned_companies"] = mentioned
-            news_with_companies.append(item)
+            sql_query = "UPDATE news SET mentioned_companies = ? WHERE id = ?"
+            sql_query_descr = f'Запись обработанной новости с id={item[0]}.'
+            execute_sql_query(write_cursor, sql_query, sql_query_descr,
+                              (json.dumps(mentioned, ensure_ascii=False), item[0]), logger)
+
             total_mentions += len(mentioned)
 
-    logger.info(f"Обработано {len(news)} новостей. Найдено {total_mentions} упоминаний компаний в {len(news_with_companies)} новостях.")
+        if item[0] % 1000 == 0:
+            conn.commit()
+            logger.info(f"Выполнен промежуточный commit, news_id = {item[0]}.")
 
-    try:
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(news_with_companies, f, ensure_ascii=False, indent=2)
-        logger.info(f"Данные успешно сохранены в {output_file}")
-    except Exception as e:
-        logger.error(f"Ошибка при сохранении {output_file}: {e}")
-        raise
+    logger.info(f"Выполнен финальный commit.")
+    conn.commit()
+    conn.close()
 
     logger.info("Этап извлечения компаний завершён.")
 
