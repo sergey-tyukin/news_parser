@@ -22,7 +22,8 @@ def create_db():
     CREATE TABLE IF NOT EXISTS channels (
         id INTEGER PRIMARY KEY,
         link TEXT UNIQUE NOT NULL,
-        name TEXT NOT NULL
+        name TEXT NOT NULL,
+        subscribers_count INTEGER NOT NULL
     );
     '''
 

@@ -4,16 +4,18 @@ import yaml
 import asyncio
 from telethon import TelegramClient
 from telethon.tl.types import Channel
+from telethon.tl.functions.channels import GetFullChannelRequest
 from src.utils.config_loader import setup_logging, PROJECT_ROOT, load_secrets, DB_PATH
 
 
 async def get_channel_title(secrets, session_file, link):
-
     async with TelegramClient(session_file, secrets['telegram']['api_id'], secrets['telegram']['api_hash']) as client:
         try:
             entity = await client.get_entity(link)
             if isinstance(entity, Channel):
-                return entity.title
+                full = await client(GetFullChannelRequest(entity))
+                subscribers = full.full_chat.participants_count
+                return entity.title, subscribers
             else:
                 return f"Ошибка, {link} - это не канал, а {type(entity).__name__}"
         except Exception as e:
@@ -45,11 +47,11 @@ def insert_channels():
         channels = [url.strip() for url in yaml.safe_load(f) if isinstance(url, str)]
 
     for channel in channels:
-        title = asyncio.run(get_channel_title(secrets, session_file, channel))
-        new_channel = (channel, title)
+        title, subscribers_count = asyncio.run(get_channel_title(secrets, session_file, channel))
+        new_channel = (channel, title, subscribers_count)
 
         sql_query_descr = f'Добавление канала "{title}", ссылка: "{channel}"'
-        sql_query = 'INSERT INTO channels (link, name) VALUES (?, ?)'
+        sql_query = 'INSERT INTO channels (link, name, subscribers_count) VALUES (?, ?, ?)'
         execute_sql_query(cursor, sql_query, sql_query_descr, new_channel, logger)
         conn.commit()
     conn.close()
