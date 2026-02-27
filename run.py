@@ -19,4 +19,5 @@ cleaners.run_news_cleaner()
 # Ищем названия компаний в новостях
 extract_companies.extract_companies()
 
-# sentiment.get_sentiment()
+# Определяем сентимент
+sentiment.get_sentiment()
