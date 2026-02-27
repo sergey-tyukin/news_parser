@@ -48,7 +48,7 @@ def extract_companies():
     alias_to_canonical = build_alias_to_canonical(companies)
     logger.info(f"Загружено {len(companies)} компаний с общим числом алиасов: {len(alias_to_canonical)}")
 
-    sql_query = 'SELECT COUNT(*) FROM news WHERE for_processing = 1'
+    sql_query = 'SELECT COUNT(*) FROM news'
     sql_query_descr = "Получение количества новостей"
     execute_sql_query(read_cursor, sql_query, sql_query_descr, (), logger)
     news_count = read_cursor.fetchone()[0]

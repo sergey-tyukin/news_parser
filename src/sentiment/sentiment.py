@@ -1,16 +1,35 @@
-import json
+import sqlite3
 import logging
+from tqdm import tqdm
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
 
-from src.utils.config_loader import setup_logging, PROJECT_ROOT
+from src.utils.config_loader import setup_logging, execute_sql_query, PROJECT_ROOT, DB_PATH
 
 
 def get_sentiment():
-    input_file = PROJECT_ROOT / "data" / "processed" / "news_with_companies.json"
-    output_file = PROJECT_ROOT / "data" / "processed" / "news_sentiment.json"
-
     setup_logging("sentiment.log")
     logger = logging.getLogger(__name__)
+    logger.info("=== Начинаем этап определения сентимента в новостях ===")
+
+    conn = sqlite3.connect(DB_PATH)
+    read_cursor = conn.cursor()
+    write_cursor = conn.cursor()
+
+    sql_query = "SELECT id, label FROM sentiment_label;"
+    sql_query_descr = "Получение списка новостей"
+    execute_sql_query(read_cursor, sql_query, sql_query_descr, (), logger)
+    labels = read_cursor.fetchall()
+    labels = {name: key for key, name in labels}
+
+    sql_query = 'SELECT COUNT(*) FROM news WHERE for_processing = 1'
+    sql_query_descr = "Получение количества новостей"
+    execute_sql_query(read_cursor, sql_query, sql_query_descr, (), logger)
+    news_count = read_cursor.fetchone()[0]
+    logger.info(f"В базе находится {news_count} новостей для обработки")
+
+    sql_query = "SELECT id, text_processed FROM news WHERE for_processing = 1;"
+    sql_query_descr = "Получение списка новостей"
+    execute_sql_query(read_cursor, sql_query, sql_query_descr, (), logger)
 
     model_name = PROJECT_ROOT / "src" / "sentiment" / ".rubert-tiny2-russian-financial-sentiment"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -23,34 +42,26 @@ def get_sentiment():
         device=-1  # явно указываем, что считаем на CPU
     )
 
-    with open(input_file, "r", encoding="utf-8") as f:
-        news_list = json.load(f)
 
-    results = []
-    for item in news_list:
-        text = item["text"]
+    for item in tqdm(read_cursor, desc='Обработка новостей') :
+        text = item[1]
 
         try:
             result = classifier(text)[0]
-            sentiment = {
-                "channel": item["channel"],
-                "message_id": item["message_id"],
-                "text": text,
-                "date": item["date"],
-                "link": item["link"],
-                "mentioned_companies": item["mentioned_companies"],
-                "sentiment_label": result["label"],
-                "sentiment_score": round(result["score"], 4)
-            }
-            results.append(sentiment)
         except Exception as e:
-            logger.error(f"Ошибка при обработке новости {item['message_id']}: {e}")
+            logger.error(f"Ошибка при определении сентимента у новости {item['message_id']}: {e}")
             continue
 
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
+        sql_query = """UPDATE news
+            SET sentiment_label_id = ?, sentiment_score = ?, for_processing = ?
+            WHERE id = ?"""
+        sql_query_descr = f'Запись компаний для новости с id={item[0]}'
+        execute_sql_query(write_cursor, sql_query, sql_query_descr,
+                          (labels[result["label"]], round(result["score"], 4), 0, item[0]), logger)
 
-    logger.info(f"Анализ завершён. Результаты сохранены в {output_file}")
+    logger.info("=== Этап определения сентимента в новостях завершен ===")
+    conn.commit()
+    conn.close()
 
 
 if __name__ == '__main__':
