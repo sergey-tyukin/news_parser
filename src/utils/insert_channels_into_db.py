@@ -27,9 +27,11 @@ def execute_sql_query(cursor, sql_query, sql_query_descr, sql_query_params, logg
     except sqlite3.Error as e:
         logger.info(f'Запрос {sql_query_descr} не выполнен. Ошибка: {e}')
 
-def main():
+def insert_channels():
     setup_logging('db_create.log')
     logger = logging.getLogger(__name__)
+
+    logger.info('=== Начинаем этап загрузки списка каналов в базу ===')
 
     secrets = load_secrets()
 
@@ -52,6 +54,8 @@ def main():
         conn.commit()
     conn.close()
 
+    logger.info('=== Этап загрузки списка каналов в базу завершена ===')
+
 
 if __name__ == "__main__":
-    main()
+    insert_channels()
