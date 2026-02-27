@@ -35,25 +35,29 @@ def extract_companies():
     setup_logging('extract_companies.log')
     logger = logging.getLogger(__name__)
 
+    logger.info("=== Начинаем этап поиска упоминаний компаний в новостях ===")
+
     companies_file = PROJECT_ROOT / "data" / "reference" / "companies.json"
 
     conn = sqlite3.connect(DB_PATH)
     read_cursor = conn.cursor()
     write_cursor = conn.cursor()
 
-    logger.info("Запуск поиска упоминаний компаний в новостях")
-
     with open(companies_file, 'r', encoding='utf-8') as f:
         companies =  json.load(f)
     alias_to_canonical = build_alias_to_canonical(companies)
     logger.info(f"Загружено {len(companies)} компаний с общим числом алиасов: {len(alias_to_canonical)}")
 
-    sql_query = """
-        SELECT id, text_processed
-        FROM news;
-    """
+    sql_query = 'SELECT COUNT(*) FROM news WHERE for_processing = 1'
+    sql_query_descr = "Получение количества новостей"
+    execute_sql_query(read_cursor, sql_query, sql_query_descr, (), logger)
+    news_count = read_cursor.fetchone()[0]
+    logger.info(f"В базе находится {news_count} новостей для обработки")
+
+    sql_query = "SELECT id, text_processed FROM news;"
     sql_query_descr = "Получение списка новостей"
     execute_sql_query(read_cursor, sql_query, sql_query_descr, (), logger)
+
 
     total_mentions = 0
 
@@ -64,9 +68,14 @@ def extract_companies():
 
         if mentioned and len(mentioned) <= 3:
             sql_query = "UPDATE news SET mentioned_companies = ? WHERE id = ?"
-            sql_query_descr = f'Запись обработанной новости с id={item[0]}.'
+            sql_query_descr = f'Запись компаний для новости с id={item[0]}'
             execute_sql_query(write_cursor, sql_query, sql_query_descr,
                               (json.dumps(mentioned, ensure_ascii=False), item[0]), logger)
+        else:
+            sql_query = "UPDATE news SET for_processing = 0 WHERE id = ?"
+            sql_query_descr = f'Новость id={item[0]} больше не участвует в обработке'
+            execute_sql_query(write_cursor, sql_query, sql_query_descr,
+                              (item[0], ), logger)
 
             total_mentions += len(mentioned)
 
@@ -78,7 +87,8 @@ def extract_companies():
     conn.commit()
     conn.close()
 
-    logger.info("Этап извлечения компаний завершён.")
+    logger.info("=== Этап поиск упоминаний компаний в новостях завершен ===")
+
 
 if __name__ == "__main__":
     extract_companies()

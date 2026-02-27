@@ -5,7 +5,7 @@ import logging
 from src.utils.config_loader import setup_logging, load_secrets, execute_sql_query, PROJECT_ROOT, DB_PATH
 
 
-PARSING_DEPTH = 1000
+PARSING_DEPTH = 100
 
 
 async def fetch_telegram_news(secrets, session_file, logger, conn):
@@ -80,6 +80,8 @@ def run_telegram_parser():
     setup_logging('parser.log')
     logger = logging.getLogger(__name__)
 
+    logger.info('=== Начинаем этап парсинга новостей ===')
+
     session_file = PROJECT_ROOT / "data" / "sessions" / "telegram_parser"
     secrets = load_secrets()
 
@@ -91,6 +93,8 @@ def run_telegram_parser():
         logger=logger,
         conn=conn
     ))
+
+    logger.info('=== Этап парсинга новостей завершен ===')
 
 
 if __name__ == '__main__':

@@ -27,7 +27,7 @@ def run_news_cleaner():
     setup_logging('extract_companies.log')
     logger = logging.getLogger(__name__)
 
-    logger.info("Запуск удаления ссылок")
+    logger.info("=== Начинаем этап предподготовки новостей ===")
 
     conn = sqlite3.connect(DB_PATH)
     read_cursor = conn.cursor()
@@ -54,9 +54,10 @@ def run_news_cleaner():
             conn.commit()
             logger.info(f"Выполнен промежуточный commit, news_id = {item[0]}.")
 
-    logger.info(f"Выполнен финальный commit.")
     conn.commit()
     conn.close()
+
+    logger.info("=== Этап предподготовки новостей завершен ===")
 
 
 if __name__ == "__main__":
