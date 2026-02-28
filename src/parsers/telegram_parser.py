@@ -5,7 +5,7 @@ import logging
 from src.utils.config_loader import setup_logging, load_secrets, execute_sql_query, PROJECT_ROOT, DB_PATH
 
 
-PARSING_DEPTH = 100
+PARSING_DEPTH = 20000
 
 
 async def fetch_telegram_news(secrets, session_file, logger, conn):

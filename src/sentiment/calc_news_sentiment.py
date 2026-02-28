@@ -16,7 +16,7 @@ def get_sentiment():
     write_cursor = conn.cursor()
 
     sql_query = "SELECT id, label FROM sentiment_label;"
-    sql_query_descr = "Получение списка новостей"
+    sql_query_descr = "Загружаем метки сентимента"
     execute_sql_query(read_cursor, sql_query, sql_query_descr, (), logger)
     labels = read_cursor.fetchall()
     labels = {name: key for key, name in labels}
@@ -39,9 +39,10 @@ def get_sentiment():
         "text-classification",
         model=model,
         tokenizer=tokenizer,
-        device=-1  # явно указываем, что считаем на CPU
+        device=-1,  # явно указываем, что считаем на CPU
+        truncation = True,
+        max_length = 2040
     )
-
 
     for item in tqdm(read_cursor, desc='Обработка новостей') :
         text = item[1]
@@ -49,7 +50,7 @@ def get_sentiment():
         try:
             result = classifier(text)[0]
         except Exception as e:
-            logger.error(f"Ошибка при определении сентимента у новости {item['message_id']}: {e}")
+            logger.error(f"Ошибка при определении сентимента у новости {item}: {e}")
             continue
 
         sql_query = """UPDATE news
