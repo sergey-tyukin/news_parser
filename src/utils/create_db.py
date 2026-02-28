@@ -57,6 +57,18 @@ def create_db():
     '''
     execute_sql_query(cursor, sql_query, sql_query_descr, (), logger)
 
+    sql_query_descr = 'Создание таблицы sentiment'
+    sql_query = '''
+    CREATE TABLE IF NOT EXISTS sentiment (
+        id INTEGER PRIMARY KEY,
+		date DATETIME NOT NULL,
+        ticker TEXT,
+        sentiment_score REAL,
+        UNIQUE(date, ticker)
+    );
+    '''
+    execute_sql_query(cursor, sql_query, sql_query_descr, (), logger)
+
     sql_query_descr = 'Создание индекса для выборки новостей по каналу и дате'
     sql_query = 'CREATE INDEX IF NOT EXISTS idx_news_channel_date ON news(channel_id, date);'
     execute_sql_query(cursor, sql_query, sql_query_descr, (), logger)
