@@ -44,7 +44,7 @@ def calculate_index():
 
     logger.info(f"Начинаем определение сентимента с {start_day} до {end_date} (всего {total_days} дней)")
 
-    with tqdm(total=total_days, desc="Вычисление индекса", unit="день") as pbar:
+    with tqdm(total=total_days, desc="Вычисление индекса", unit="запись") as pbar:
         current_date = start_day
 
         # Итерируемся по датам
