@@ -1,0 +1,3544 @@
+{
+  "ABIO": {
+    "name": "ПАО Артген",
+    "ticker_ord": "ABIO",
+    "isin_ord": "RU000A0JNAB6",
+    "level_ord": 2,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 92645451,
+    "searchnames": [
+      "abio",
+      "ru000a0jnab6",
+      "артген",
+      "iартген"
+    ]
+  },
+  "ABRD": {
+    "name": "Абрау-Дюрсо ПАО",
+    "ticker_ord": "ABRD",
+    "isin_ord": "RU000A0JS5T7",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 108889117,
+    "searchnames": [
+      "abrd",
+      "ru000a0js5t7",
+      "абрау-дюрсо",
+      "абраудюрсо"
+    ]
+  },
+  "AFKS": {
+    "name": "АФК Система ПАО",
+    "ticker_ord": "AFKS",
+    "isin_ord": "RU000A0DQZE3",
+    "level_ord": 1,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 9650000000,
+    "searchnames": [
+      "afks",
+      "ru000a0dqze3",
+      "афк"
+    ]
+  },
+  "AFLT": {
+    "name": "Аэрофлот-росс.авиалин(ПАО)",
+    "ticker_ord": "AFLT",
+    "isin_ord": "RU0009062285",
+    "level_ord": 1,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 3975771215,
+    "searchnames": [
+      "aflt",
+      "ru0009062285",
+      "аэрофлот"
+    ]
+  },
+  "AKRN": {
+    "name": "Акрон ПАО",
+    "ticker_ord": "AKRN",
+    "isin_ord": "RU0009028674",
+    "level_ord": 2,
+    "lotsize_ord": 1,
+    "minstep_ord": 2,
+    "issuesize_ord": 36757156,
+    "searchnames": [
+      "akrn",
+      "ru0009028674",
+      "акрон"
+    ]
+  },
+  "ALRS": {
+    "name": "АЛРОСА ПАО",
+    "ticker_ord": "ALRS",
+    "isin_ord": "RU0007252813",
+    "level_ord": 1,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 7364965630,
+    "searchnames": [
+      "alrs",
+      "ru0007252813",
+      "алроса"
+    ]
+  },
+  "AMEZ": {
+    "name": "Ашинский метзавод ПАО",
+    "ticker_ord": "AMEZ",
+    "isin_ord": "RU000A0B88G6",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 498454822,
+    "searchnames": [
+      "amez",
+      "ru000a0b88g6",
+      "ашинск"
+    ]
+  },
+  "APRI": {
+    "name": "АПРИ",
+    "ticker_ord": "APRI",
+    "isin_ord": "RU000A108LJ5",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 1115439217,
+    "searchnames": [
+      "apri",
+      "ru000a108lj5",
+      "апри"
+    ]
+  },
+  "APTK": {
+    "name": "ПАО Аптечная сеть 36,6",
+    "ticker_ord": "APTK",
+    "isin_ord": "RU0008081765",
+    "level_ord": 2,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 7630433826,
+    "searchnames": [
+      "aptk",
+      "ru0008081765",
+      "36,6",
+      "36и6",
+      "36.6"
+    ]
+  },
+  "AQUA": {
+    "name": "ПАО ИНАРКТИКА",
+    "ticker_ord": "AQUA",
+    "isin_ord": "RU000A0JQTS3",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 87876649,
+    "searchnames": [
+      "aqua",
+      "ru000a0jqts3",
+      "инарктик"
+    ]
+  },
+  "ARSA": {
+    "name": "УК Арсагера ПАО",
+    "ticker_ord": "ARSA",
+    "isin_ord": "RU000A0JP0Q7",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 123817165,
+    "searchnames": [
+      "arsa",
+      "ru000a0jp0q7",
+      "арсагер"
+    ]
+  },
+  "ASSB": {
+    "name": "Астраханская ЭСК ПАО",
+    "ticker_ord": "ASSB",
+    "isin_ord": "RU000A0D8MM8",
+    "level_ord": 3,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 773900078,
+    "searchnames": [
+      "assb",
+      "ru000a0d8mm8",
+      "астраханск",
+      "астрэнсб"
+    ]
+  },
+  "ASTR": {
+    "name": "Группа Астра",
+    "ticker_ord": "ASTR",
+    "isin_ord": "RU000A106T36",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 210000000,
+    "searchnames": [
+      "astr",
+      "ru000a106t36",
+      "астра",
+      "iастра",
+      "astra"
+    ]
+  },
+  "AVAN": {
+    "name": "АКБ АВАНГАРД ПАО",
+    "ticker_ord": "AVAN",
+    "isin_ord": "RU000A0DM7B3",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 1,
+    "issuesize_ord": 80700000,
+    "searchnames": [
+      "avan",
+      "ru000a0dm7b3",
+      "авангард",
+      "авангрд"
+    ]
+  },
+  "BANE": {
+    "name": "Башнефть АНК",
+    "ticker_ord": "BANE",
+    "isin_ord": "RU0007976957",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 147846489,
+    "ticker_pref": "BANEP",
+    "isin_pref": "RU0007976965",
+    "level_pref": 3,
+    "lotsize_pref": 1,
+    "minstep_pref": 0,
+    "issuesize_pref": 29788012,
+    "searchnames": [
+      "bane",
+      "ru0007976957",
+      "banep",
+      "ru0007976965",
+      "башнефт"
+    ]
+  },
+  "BAZA": {
+    "name": "ГК БАЗИС",
+    "ticker_ord": "BAZA",
+    "isin_ord": "RU000A10CTQ0",
+    "level_ord": 2,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 165000000,
+    "searchnames": [
+      "baza",
+      "ru000a10ctq0",
+      "базис",
+      "iбазис"
+    ]
+  },
+  "BELU": {
+    "name": "НоваБев Групп ПАО",
+    "ticker_ord": "BELU",
+    "isin_ord": "RU000A0HL5M1",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 126400000,
+    "searchnames": [
+      "belu",
+      "ru000a0hl5m1",
+      "новабев",
+      "белуг"
+    ]
+  },
+  "BISVP": {
+    "name": "Башинформсвязь(ПАО)",
+    "ticker_pref": "BISVP",
+    "isin_pref": "RU0009100176",
+    "level_pref": 3,
+    "lotsize_pref": 100,
+    "minstep_pref": 0,
+    "issuesize_pref": 36165270,
+    "searchnames": [
+      "bisvp",
+      "ru0009100176",
+      "башинформсвяз",
+      "башинсв"
+    ]
+  },
+  "BLNG": {
+    "name": "Белон ОАО",
+    "ticker_ord": "BLNG",
+    "isin_ord": "RU000A0J2QG8",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 1150000000,
+    "searchnames": [
+      "blng",
+      "ru000a0j2qg8",
+      "белон"
+    ]
+  },
+  "BRZL": {
+    "name": "Бурятзолото ПАО",
+    "ticker_ord": "BRZL",
+    "isin_ord": "RU0009288658",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 2,
+    "issuesize_ord": 7027270,
+    "searchnames": [
+      "brzl",
+      "ru0009288658",
+      "бурятзолото",
+      "бурзолото"
+    ]
+  },
+  "BSPB": {
+    "name": "ПАО Банк Санкт-Петербург",
+    "ticker_ord": "BSPB",
+    "isin_ord": "RU0009100945",
+    "level_ord": 1,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 445368521,
+    "ticker_pref": "BSPBP",
+    "isin_pref": "RU000A0JP0U9",
+    "level_pref": 3,
+    "lotsize_pref": 100,
+    "minstep_pref": 0,
+    "issuesize_pref": 20100000,
+    "searchnames": [
+      "bspb",
+      "ru0009100945",
+      "bspbp",
+      "ru000a0jp0u9",
+      "бсп",
+      "bsp",
+      "банк санкт-петербург"
+    ]
+  },
+  "CARM": {
+    "name": "СТГ",
+    "ticker_ord": "CARM",
+    "isin_ord": "RU000A105NV2",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 2917616015,
+    "searchnames": [
+      "carm",
+      "ru000a105nv2",
+      "стг"
+    ]
+  },
+  "CBOM": {
+    "name": "МКБ ПАО",
+    "ticker_ord": "CBOM",
+    "isin_ord": "RU000A0JUG31",
+    "level_ord": 1,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 33429709866,
+    "searchnames": [
+      "cbom",
+      "ru000a0jug31",
+      "мкб"
+    ]
+  },
+  "CHGZ": {
+    "name": "РН-Задная Сибирь ПАО",
+    "ticker_ord": "CHGZ",
+    "isin_ord": "RU0009082291",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 26771420,
+    "searchnames": [
+      "chgz",
+      "ru0009082291",
+      "западная сибирь",
+      "рн-запсиб"
+    ]
+  },
+  "CHKZ": {
+    "name": "ЧКПЗ ПАО",
+    "ticker_ord": "CHKZ",
+    "isin_ord": "RU000A0JNST0",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 50,
+    "issuesize_ord": 600216,
+    "searchnames": [
+      "chkz",
+      "ru000a0jnst0",
+      "чкпз"
+    ]
+  },
+  "CHMF": {
+    "name": "Северсталь (ПАО)",
+    "ticker_ord": "CHMF",
+    "isin_ord": "RU0009046510",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 837718660,
+    "searchnames": [
+      "chmf",
+      "ru0009046510",
+      "северсталь",
+      "севст",
+      "severstal",
+      "севк"
+    ]
+  },
+  "CHMK": {
+    "name": "ЧМК ПАО",
+    "ticker_ord": "CHMK",
+    "isin_ord": "RU0007665170",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 5,
+    "issuesize_ord": 3161965,
+    "searchnames": [
+      "chmk",
+      "ru0007665170",
+      "чмк"
+    ]
+  },
+  "CNRU": {
+    "name": "МКПАО Циан",
+    "ticker_ord": "CNRU",
+    "isin_ord": "RU000A10ANA1",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 77670490,
+    "searchnames": [
+      "cnru",
+      "ru000a10ana1",
+      "циан"
+    ]
+  },
+  "CNTL": {
+    "name": "Центральный Телеграф ПАО",
+    "ticker_ord": "CNTL",
+    "isin_ord": "RU0007665147",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 166167000,
+    "ticker_pref": "CNTLP",
+    "isin_pref": "RU0007665139",
+    "level_pref": 3,
+    "lotsize_pref": 100,
+    "minstep_pref": 0,
+    "issuesize_pref": 55389000,
+    "searchnames": [
+      "cntl",
+      "ru0007665147",
+      "cntlp",
+      "ru0007665139",
+      "телеграф"
+    ]
+  },
+  "DATA": {
+    "name": "Группа Аренадата",
+    "ticker_ord": "DATA",
+    "isin_ord": "RU000A108ZR8",
+    "level_ord": 2,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 209160464,
+    "searchnames": [
+      "data",
+      "ru000a108zr8",
+      "аренадат",
+      "iаренадата",
+      "arenadata"
+    ]
+  },
+  "DELI": {
+    "name": "Каршеринг Руссия",
+    "ticker_ord": "DELI",
+    "isin_ord": "RU000A107J11",
+    "level_ord": 2,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 175849057,
+    "searchnames": [
+      "deli",
+      "ru000a107j11",
+      "каршеринг",
+      "iкаршеринг",
+      "делимобил"
+    ]
+  },
+  "DIAS": {
+    "name": "Диасофт",
+    "ticker_ord": "DIAS",
+    "isin_ord": "RU000A107ER5",
+    "level_ord": 2,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 10500000,
+    "searchnames": [
+      "dias",
+      "ru000a107er5",
+      "диасофт",
+      "iдиасофт"
+    ]
+  },
+  "DIOD": {
+    "name": "Завод ДИОД ПАО",
+    "ticker_ord": "DIOD",
+    "isin_ord": "RU000A0JQWC1",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 91500000,
+    "searchnames": [
+      "diod",
+      "ru000a0jqwc1",
+      "диод"
+    ]
+  },
+  "DOMRF": {
+    "name": "ПАО ДОМ.РФ",
+    "ticker_ord": "DOMRF",
+    "isin_ord": "RU000A0ZZFU5",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 179888718,
+    "searchnames": [
+      "domrf",
+      "ru000a0zzfu5",
+      "дом.рф",
+      "dom.rf"
+    ]
+  },
+  "DVEC": {
+    "name": "ДЭК ПАО",
+    "ticker_ord": "DVEC",
+    "isin_ord": "RU000A0JP2W1",
+    "level_ord": 3,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 17223107804,
+    "searchnames": [
+      "dvec",
+      "ru000a0jp2w1",
+      "дэк"
+    ]
+  },
+  "DZRD": {
+    "name": "Донской завод радиодеталей",
+    "ticker_ord": "DZRD",
+    "isin_ord": "RU000A0JQW11",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 5,
+    "issuesize_ord": 343407,
+    "ticker_pref": "DZRDP",
+    "isin_pref": "RU000A0JQW29",
+    "level_pref": 3,
+    "lotsize_pref": 1,
+    "minstep_pref": 10,
+    "issuesize_pref": 114469,
+    "searchnames": [
+      "dzrd",
+      "ru000a0jqw11",
+      "dzrdp",
+      "ru000a0jqw29",
+      "донско",
+      "донскзр",
+      "радиодеталей"
+    ]
+  },
+  "EELT": {
+    "name": "ЕвропЭлектротехника ПАО",
+    "ticker_ord": "EELT",
+    "isin_ord": "RU000A0JWW54",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 551813000,
+    "searchnames": [
+      "eelt",
+      "ru000a0jww54",
+      "европэлектротехника",
+      "евроэлтех"
+    ]
+  },
+  "ELFV": {
+    "name": "ЭЛ5-Энерго ПАО",
+    "ticker_ord": "ELFV",
+    "isin_ord": "RU000A0F5UN3",
+    "level_ord": 1,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 35371898370,
+    "searchnames": [
+      "elfv",
+      "ru000a0f5un3",
+      "эл5"
+    ]
+  },
+  "ELMT": {
+    "name": "Элемент",
+    "ticker_ord": "ELMT",
+    "isin_ord": "RU000A102093",
+    "level_ord": 3,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 469725539040,
+    "searchnames": [
+      "elmt",
+      "ru000a102093",
+      "элемент",
+      "iэлемент"
+    ]
+  },
+  "ENPG": {
+    "name": "МКПАО ЭН+ ГРУП",
+    "ticker_ord": "ENPG",
+    "isin_ord": "RU000A100K72",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 638848896,
+    "searchnames": [
+      "enpg",
+      "ru000a100k72",
+      "эн+",
+      "en+"
+    ]
+  },
+  "ETLN": {
+    "name": "МКПАО Эталон Груп",
+    "ticker_ord": "ETLN",
+    "isin_ord": "RU000A10C1L6",
+    "level_ord": 2,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 383445362,
+    "searchnames": [
+      "etln",
+      "ru000a10c1l6",
+      "эталон"
+    ]
+  },
+  "EUTR": {
+    "name": "ЕвроТранс",
+    "ticker_ord": "EUTR",
+    "isin_ord": "RU000A1002V2",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 159148665,
+    "searchnames": [
+      "eutr",
+      "ru000a1002v2",
+      "евротранс"
+    ]
+  },
+  "FEES": {
+    "name": "ФСК - Россети ПАО",
+    "ticker_ord": "FEES",
+    "isin_ord": "RU000A0JPNN9",
+    "level_ord": 1,
+    "lotsize_ord": 10000,
+    "minstep_ord": 0,
+    "issuesize_ord": 2113460101477,
+    "searchnames": [
+      "fees",
+      "ru000a0jpnn9",
+      "фск"
+    ]
+  },
+  "FESH": {
+    "name": "ДВ морское пароходство ПАО",
+    "ticker_ord": "FESH",
+    "isin_ord": "RU0008992318",
+    "level_ord": 2,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 2951250000,
+    "searchnames": [
+      "fesh",
+      "ru0008992318",
+      "пароходств",
+      "двмп"
+    ]
+  },
+  "FIXR": {
+    "name": "ПАО Фикс Прайс",
+    "ticker_ord": "FIXR",
+    "isin_ord": "RU000A10B5G8",
+    "level_ord": 1,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 100000000000,
+    "searchnames": [
+      "fixr",
+      "ru000a10b5g8",
+      "фикспрайс",
+      "фикс прайс",
+      "fix price",
+      "fixprice"
+    ]
+  },
+  "FLOT": {
+    "name": "Совкомфлот",
+    "ticker_ord": "FLOT",
+    "isin_ord": "RU000A0JXNU8",
+    "level_ord": 1,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 2374993901,
+    "searchnames": [
+      "flot",
+      "ru000a0jxnu8",
+      "совкомфлот"
+    ]
+  },
+  "GAZA": {
+    "name": "ГАЗ ПАО",
+    "ticker_ord": "GAZA",
+    "isin_ord": "RU0009034268",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 1,
+    "issuesize_ord": 18520260,
+    "ticker_pref": "GAZAP",
+    "isin_pref": "RU000A0ZYHF5",
+    "level_pref": 3,
+    "lotsize_pref": 10,
+    "minstep_pref": 0,
+    "issuesize_pref": 1453500,
+    "searchnames": [
+      "gaza",
+      "ru0009034268",
+      "gazap",
+      "ru000a0zyhf5",
+      "газ пао",
+      "пао газ"
+    ]
+  },
+  "GAZC": {
+    "name": "ГАЗКОН (ПАО)",
+    "ticker_ord": "GAZC",
+    "isin_ord": "RU000A0JQG86",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 1,
+    "issuesize_ord": 225381601,
+    "searchnames": [
+      "gazc",
+      "ru000a0jqg86",
+      "газкон"
+    ]
+  },
+  "GAZP": {
+    "name": "Газпром (ПАО)",
+    "ticker_ord": "GAZP",
+    "isin_ord": "RU0007661625",
+    "level_ord": 1,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 23673512900,
+    "searchnames": [
+      "gazp",
+      "ru0007661625",
+      "газпром"
+    ]
+  },
+  "GAZS": {
+    "name": "ГАЗ-сервис (ПАО)",
+    "ticker_ord": "GAZS",
+    "isin_ord": "RU000A0JQG78",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 1,
+    "issuesize_ord": 206508967,
+    "searchnames": [
+      "gazs",
+      "ru000a0jqg78",
+      "газ-сервис"
+    ]
+  },
+  "GAZT": {
+    "name": "ГАЗ-Тек ПАО",
+    "ticker_ord": "GAZT",
+    "isin_ord": "RU000A0JS199",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 471428300,
+    "searchnames": [
+      "gazt",
+      "ru000a0js199",
+      "газ-тек"
+    ]
+  },
+  "GCHE": {
+    "name": "Группа Черкизово ПАО",
+    "ticker_ord": "GCHE",
+    "isin_ord": "RU000A0JL4R1",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 1,
+    "issuesize_ord": 42222042,
+    "searchnames": [
+      "gche",
+      "ru000a0jl4r1",
+      "черкизов"
+    ]
+  },
+  "GECO": {
+    "name": "ЦГРМ ГЕНЕТИКО",
+    "ticker_ord": "GECO",
+    "isin_ord": "RU000A105BN4",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 90000000,
+    "searchnames": [
+      "geco",
+      "ru000a105bn4",
+      "генетико",
+      "iгенетико",
+      "genetico"
+    ]
+  },
+  "GEMA": {
+    "name": "ПАО ММЦБ",
+    "ticker_ord": "GEMA",
+    "isin_ord": "RU000A100GC7",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 14929920,
+    "searchnames": [
+      "gema",
+      "ru000a100gc7",
+      "ммцб",
+      "iммцб"
+    ]
+  },
+  "GEMC": {
+    "name": "Юнайтед Медикал Груп ПАО",
+    "ticker_ord": "GEMC",
+    "isin_ord": "RU000A107JE2",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 90000000,
+    "searchnames": [
+      "gemc",
+      "ru000a107je2",
+      "юнайтед медикал груп пао",
+      "юмг",
+      "емц",
+      "европейский медицинский центр"
+    ]
+  },
+  "GLRX": {
+    "name": "ПАО ГЛОРАКС",
+    "ticker_ord": "GLRX",
+    "isin_ord": "RU000A10CRQ4",
+    "level_ord": 2,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 282812500,
+    "searchnames": [
+      "glrx",
+      "ru000a10crq4",
+      "глоракс",
+      "glorax"
+    ]
+  },
+  "GMKN": {
+    "name": "ГМК Нор.Никель ПАО",
+    "ticker_ord": "GMKN",
+    "isin_ord": "RU0007288411",
+    "level_ord": 1,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 15286339700,
+    "searchnames": [
+      "gmkn",
+      "ru0007288411",
+      "нор.никель",
+      "гмк",
+      "норникел",
+      "норка"
+    ]
+  },
+  "GTRK": {
+    "name": "ПАО ГТМ",
+    "ticker_ord": "GTRK",
+    "isin_ord": "RU000A0ZYD22",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 58462120,
+    "searchnames": [
+      "gtrk",
+      "ru000a0zyd22",
+      "гтм"
+    ]
+  },
+  "HEAD": {
+    "name": "МКПАО Хэдхантер",
+    "ticker_ord": "HEAD",
+    "isin_ord": "RU000A107662",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 1,
+    "issuesize_ord": 47184918,
+    "searchnames": [
+      "head",
+      "ru000a107662",
+      "хэдхантер",
+      "hh",
+      "headhunter"
+    ]
+  },
+  "HIMCP": {
+    "name": "Химпром ПАО",
+    "ticker_pref": "HIMCP",
+    "isin_pref": "RU0009099006",
+    "level_pref": 3,
+    "lotsize_pref": 100,
+    "minstep_pref": 0,
+    "issuesize_pref": 229631402,
+    "searchnames": [
+      "himcp",
+      "ru0009099006",
+      "химпром"
+    ]
+  },
+  "HNFG": {
+    "name": "ХЭНДЕРСОН",
+    "ticker_ord": "HNFG",
+    "isin_ord": "RU000A106XF2",
+    "level_ord": 2,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 40444445,
+    "searchnames": [
+      "hnfg",
+      "ru000a106xf2",
+      "хэндерсон",
+      "henderson"
+    ]
+  },
+  "HYDR": {
+    "name": "ПАО РусГидро",
+    "ticker_ord": "HYDR",
+    "isin_ord": "RU000A0JPKH7",
+    "level_ord": 1,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 444793377038,
+    "searchnames": [
+      "hydr",
+      "ru000a0jpkh7",
+      "русгидро",
+      "rusgidro"
+    ]
+  },
+  "IGST": {
+    "name": "Ижсталь ПАО 2в.",
+    "ticker_ord": "IGST",
+    "isin_ord": "RU0002155292",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 20,
+    "issuesize_ord": 800729,
+    "ticker_pref": "IGSTP",
+    "isin_pref": "RU0002155300",
+    "level_pref": 3,
+    "lotsize_pref": 1,
+    "minstep_pref": 10,
+    "issuesize_pref": 266910,
+    "searchnames": [
+      "igst",
+      "ru0002155292",
+      "igstp",
+      "ru0002155300",
+      "ижсталь"
+    ]
+  },
+  "IRAO": {
+    "name": "Интер РАО ПАО",
+    "ticker_ord": "IRAO",
+    "isin_ord": "RU000A0JPNM1",
+    "level_ord": 1,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 104400000000,
+    "searchnames": [
+      "irao",
+      "ru000a0jpnm1",
+      "интер рао",
+      "интеррао"
+    ]
+  },
+  "IRKT": {
+    "name": "Яковлев ПАО ак.об.-3",
+    "ticker_ord": "IRKT",
+    "isin_ord": "RU0006752979",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 12051279624,
+    "searchnames": [
+      "irkt",
+      "ru0006752979",
+      "яковлев",
+      "иркут"
+    ]
+  },
+  "IVAT": {
+    "name": "ПАО ИВА",
+    "ticker_ord": "IVAT",
+    "isin_ord": "RU000A108GD8",
+    "level_ord": 2,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 100000000,
+    "searchnames": [
+      "ivat",
+      "ru000a108gd8",
+      "ива",
+      "iива",
+      "iva"
+    ]
+  },
+  "JNOS": {
+    "name": "Славнефть-ЯНОС (ПАО)",
+    "ticker_ord": "JNOS",
+    "isin_ord": "RU0009100895",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 932654723,
+    "ticker_pref": "JNOSP",
+    "isin_pref": "RU0009101927",
+    "level_pref": 3,
+    "lotsize_pref": 100,
+    "minstep_pref": 0,
+    "issuesize_pref": 310884574,
+    "searchnames": [
+      "jnos",
+      "ru0009100895",
+      "jnosp",
+      "ru0009101927",
+      "славнефть-янос",
+      "славн-янос"
+    ]
+  },
+  "KAZT": {
+    "name": "Куйбышевазот ПАО",
+    "ticker_ord": "KAZT",
+    "isin_ord": "RU000A0B9BV2",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 176582530,
+    "ticker_pref": "KAZTP",
+    "isin_pref": "RU000A0B9BW0",
+    "level_pref": 3,
+    "lotsize_pref": 10,
+    "minstep_pref": 0,
+    "issuesize_pref": 3204795,
+    "searchnames": [
+      "kazt",
+      "ru000a0b9bv2",
+      "kaztp",
+      "ru000a0b9bw0",
+      "куйбышевазот"
+    ]
+  },
+  "KBSB": {
+    "name": "ТНС энерго Кубань ПАО",
+    "ticker_ord": "KBSB",
+    "isin_ord": "RU000A0JNJ11",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 1,
+    "issuesize_ord": 17869440,
+    "searchnames": [
+      "kbsb",
+      "ru000a0jnj11",
+      "кубан"
+    ]
+  },
+  "KCHE": {
+    "name": "Камчатскэнерго ПАО",
+    "ticker_ord": "KCHE",
+    "isin_ord": "RU0006753498",
+    "level_ord": 3,
+    "lotsize_ord": 10000,
+    "minstep_ord": 0,
+    "issuesize_ord": 58294409860,
+    "ticker_pref": "KCHEP",
+    "isin_pref": "RU0006753480",
+    "level_pref": 3,
+    "lotsize_pref": 10000,
+    "minstep_pref": 0,
+    "issuesize_pref": 183062052,
+    "searchnames": [
+      "kche",
+      "ru0006753498",
+      "kchep",
+      "ru0006753480",
+      "камчатскэнерго"
+    ]
+  },
+  "KFBA": {
+    "name": "ИНГРАД ПАО",
+    "ticker_ord": "KFBA",
+    "isin_ord": "RU000A0DJ9B4",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 5,
+    "issuesize_ord": 41220793,
+    "searchnames": [
+      "kfba",
+      "ru000a0dj9b4",
+      "инград",
+      "ingrad"
+    ]
+  },
+  "KGKC": {
+    "name": "Курганская генер.комп.ПАО",
+    "ticker_ord": "KGKC",
+    "isin_ord": "RU000A0JP120",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 122453406,
+    "ticker_pref": "KGKCP",
+    "isin_pref": "RU000A0JP138",
+    "level_pref": 3,
+    "lotsize_pref": 10,
+    "minstep_pref": 0,
+    "issuesize_pref": 14393052,
+    "searchnames": [
+      "kgkc",
+      "ru000a0jp120",
+      "kgkcp",
+      "ru000a0jp138",
+      "курганск"
+    ]
+  },
+  "KLSB": {
+    "name": "Калужская сбыт.комп.ПАО",
+    "ticker_ord": "KLSB",
+    "isin_ord": "RU000A0DKZK3",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 91487347,
+    "searchnames": [
+      "klsb",
+      "ru000a0dkzk3",
+      "калужск"
+    ]
+  },
+  "KLVZ": {
+    "name": "Алкогольная Группа Кристалл",
+    "ticker_ord": "KLVZ",
+    "isin_ord": "RU000A107KX0",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 921052700,
+    "searchnames": [
+      "klvz",
+      "ru000a107kx0",
+      "КЛВЗ",
+      "кристалл"
+    ]
+  },
+  "KMAZ": {
+    "name": "КАМАЗ ПАО",
+    "ticker_ord": "KMAZ",
+    "isin_ord": "RU0008959580",
+    "level_ord": 2,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 707229559,
+    "searchnames": [
+      "kmaz",
+      "ru0008959580",
+      "камаз",
+      "kamaz"
+    ]
+  },
+  "KMEZ": {
+    "name": "Ковровский механический завод",
+    "ticker_ord": "KMEZ",
+    "isin_ord": "RU0006753613",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 2,
+    "issuesize_ord": 3764600,
+    "searchnames": [
+      "kmez",
+      "ru0006753613",
+      "ковров",
+      "кмз"
+    ]
+  },
+  "KOGK": {
+    "name": "Коршуновский ГОК ПАО",
+    "ticker_ord": "KOGK",
+    "isin_ord": "RU0002155359",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 25012600,
+    "searchnames": [
+      "kogk",
+      "ru0002155359",
+      "коршуновск",
+      "коршгок"
+    ]
+  },
+  "KRKN": {
+    "name": "Саратовский НПЗ ПАО",
+    "ticker_ord": "KRKN",
+    "isin_ord": "RU0009100408",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 50,
+    "issuesize_ord": 748012,
+    "ticker_pref": "KRKNP",
+    "isin_pref": "RU0009100416",
+    "level_pref": 3,
+    "lotsize_pref": 1,
+    "minstep_pref": 20,
+    "issuesize_pref": 249337,
+    "searchnames": [
+      "krkn",
+      "ru0009100408",
+      "krknp",
+      "ru0009100416",
+      "саратовский нпз",
+      "саратнпз"
+    ]
+  },
+  "KRKOP": {
+    "name": "ТКЗ Красный котельщик ПАО",
+    "ticker_pref": "KRKOP",
+    "isin_pref": "RU0009098131",
+    "level_pref": 3,
+    "lotsize_pref": 100,
+    "minstep_pref": 0,
+    "issuesize_pref": 71086000,
+    "searchnames": [
+      "krkop",
+      "ru0009098131",
+      "котельщик",
+      "ткзкк"
+    ]
+  },
+  "KROT": {
+    "name": "КрасныйОктябрь ПАО -",
+    "ticker_ord": "KROT",
+    "isin_ord": "RU0008913850",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 1,
+    "issuesize_ord": 9217583,
+    "ticker_pref": "KROTP",
+    "isin_pref": "RU0008913868",
+    "level_pref": 3,
+    "lotsize_pref": 10,
+    "minstep_pref": 1,
+    "issuesize_pref": 1474549,
+    "searchnames": [
+      "krot",
+      "krotp",
+      "ru0008913868",
+      "ru0008913850",
+      "красныйоктябрь",
+      "красный октябрь"
+    ]
+  },
+  "KRSB": {
+    "name": "Красноярскэнергосбыт",
+    "ticker_ord": "KRSB",
+    "isin_ord": "RU000A0HMLY1",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 596039612,
+    "ticker_pref": "KRSBP",
+    "isin_pref": "RU000A0HMLZ8",
+    "level_pref": 3,
+    "lotsize_pref": 100,
+    "minstep_pref": 0,
+    "issuesize_pref": 168993328,
+    "searchnames": [
+      "krsb",
+      "ru000a0hmly1",
+      "krsbp",
+      "ru000a0hmlz8",
+      "красноярскэнергосбыт"
+    ]
+  },
+  "KUZB": {
+    "name": "Банк Кузнецкий ПАО",
+    "ticker_ord": "KUZB",
+    "isin_ord": "RU000A0JSQ66",
+    "level_ord": 3,
+    "lotsize_ord": 10000,
+    "minstep_ord": 0,
+    "issuesize_ord": 22503490875,
+    "searchnames": [
+      "kuzb",
+      "ru000a0jsq66",
+      "кузнецкий"
+    ]
+  },
+  "KZOS": {
+    "name": "ПАО Органический синтез",
+    "ticker_ord": "KZOS",
+    "isin_ord": "RU0009089825",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 1785114000,
+    "ticker_pref": "KZOSP",
+    "isin_pref": "RU0006753456",
+    "level_pref": 3,
+    "lotsize_pref": 10,
+    "minstep_pref": 0,
+    "issuesize_pref": 119596000,
+    "searchnames": [
+      "kzos",
+      "ru0009089825",
+      "kzosp",
+      "ru0006753456",
+      "органический синтез",
+      "оргсинт"
+    ]
+  },
+  "LEAS": {
+    "name": "ПАО «ЛК «Европлан»",
+    "ticker_ord": "LEAS",
+    "isin_ord": "RU000A0ZZFS9",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 120000000,
+    "searchnames": [
+      "leas",
+      "ru000a0zzfs9",
+      "европлан"
+    ]
+  },
+  "LENT": {
+    "name": "Лента МКПАО",
+    "ticker_ord": "LENT",
+    "isin_ord": "RU000A102S15",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 115985197,
+    "searchnames": [
+      "lent",
+      "ru000a102s15",
+      "лента"
+    ]
+  },
+  "LIFE": {
+    "name": "Фармсинтез ПАО",
+    "ticker_ord": "LIFE",
+    "isin_ord": "RU000A0JR514",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 440394854,
+    "searchnames": [
+      "life",
+      "ru000a0jr514",
+      "фармсинтез"
+    ]
+  },
+  "LKOH": {
+    "name": "НК ЛУКОЙЛ (ПАО) -",
+    "ticker_ord": "LKOH",
+    "isin_ord": "RU0009024277",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 692865762,
+    "searchnames": [
+      "lkoh",
+      "ru0009024277",
+      "лукойл",
+      "lukoil"
+    ]
+  },
+  "LMBZ": {
+    "name": "Ламбумиз",
+    "ticker_ord": "LMBZ",
+    "isin_ord": "RU000A108ZX6",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 20752219,
+    "searchnames": [
+      "lmbz",
+      "ru000a108zx6",
+      "ламбумиз"
+    ]
+  },
+  "LNZL": {
+    "name": "Лензолото ПАО",
+    "ticker_ord": "LNZL",
+    "isin_ord": "RU000A0JP1N2",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 10,
+    "issuesize_ord": 1140300,
+    "ticker_pref": "LNZLP",
+    "isin_pref": "RU000A0JP1P7",
+    "level_pref": 3,
+    "lotsize_pref": 1,
+    "minstep_pref": 2,
+    "issuesize_pref": 347700,
+    "searchnames": [
+      "lnzl",
+      "ru000a0jp1n2",
+      "lnzlp",
+      "ru000a0jp1p7",
+      "лензолото"
+    ]
+  },
+  "LPSB": {
+    "name": "Липецкая энергосбыт.ком.ОАО",
+    "ticker_ord": "LPSB",
+    "isin_ord": "RU000A0D8MR7",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 155521950,
+    "searchnames": [
+      "lpsb",
+      "ru000a0d8mr7",
+      "липецкая энергосбыт",
+      "лэск ао"
+    ]
+  },
+  "LSNG": {
+    "name": "Россети Ленэнерго ПАО",
+    "ticker_ord": "LSNG",
+    "isin_ord": "RU0009034490",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 8523785320,
+    "ticker_pref": "LSNGP",
+    "isin_pref": "RU0009092134",
+    "level_pref": 3,
+    "lotsize_pref": 10,
+    "minstep_pref": 0,
+    "issuesize_pref": 93264311,
+    "searchnames": [
+      "lsng",
+      "ru0009034490",
+      "lsngp",
+      "ru0009092134",
+      "россети ленэнерго",
+      "рсетилэ"
+    ]
+  },
+  "LSRG": {
+    "name": "Группа ЛСР ПАО",
+    "ticker_ord": "LSRG",
+    "isin_ord": "RU000A0JPFP0",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 103030215,
+    "searchnames": [
+      "lsrg",
+      "ru000a0jpfp0",
+      "лср"
+    ]
+  },
+  "LVHK": {
+    "name": "Левенгук ПАО",
+    "ticker_ord": "LVHK",
+    "isin_ord": "RU000A0JT7Y2",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 52940000,
+    "searchnames": [
+      "lvhk",
+      "ru000a0jt7y2",
+      "левенгук"
+    ]
+  },
+  "MAGE": {
+    "name": "Магаданэнерго ПАО",
+    "ticker_ord": "MAGE",
+    "isin_ord": "RU0006758919",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 463838268,
+    "ticker_pref": "MAGEP",
+    "isin_pref": "RU0006758893",
+    "level_pref": 3,
+    "lotsize_pref": 100,
+    "minstep_pref": 0,
+    "issuesize_pref": 145673254,
+    "searchnames": [
+      "mage",
+      "ru0006758919",
+      "magep",
+      "ru0006758893",
+      "магаданэнерго",
+      "магадэн"
+    ]
+  },
+  "MAGN": {
+    "name": "Магнитогорск.мет.комб ПАО",
+    "ticker_ord": "MAGN",
+    "isin_ord": "RU0009084396",
+    "level_ord": 1,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 11174330000,
+    "searchnames": [
+      "magn",
+      "ru0009084396",
+      "магнитогорск",
+      "ммк"
+    ]
+  },
+  "MBNK": {
+    "name": "МТС-Банк",
+    "ticker_ord": "MBNK",
+    "isin_ord": "RU000A0JRH43",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 37526637,
+    "searchnames": [
+      "mbnk",
+      "ru000a0jrh43",
+      "мтс-банк",
+      "мтс банк",
+      "мтсбанк"
+    ]
+  },
+  "MDMG": {
+    "name": "МКПАО «МД Медикал Груп»",
+    "ticker_ord": "MDMG",
+    "isin_ord": "RU000A108KL3",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 75125010,
+    "searchnames": [
+      "mdmg",
+      "ru000a108kl3",
+      "мд медикал груп",
+      "мать и дитя"
+    ]
+  },
+  "MFGS": {
+    "name": " Славнефть-Мегионнефтегаз",
+    "ticker_ord": "MFGS",
+    "isin_ord": "RU0009011126",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 1,
+    "issuesize_ord": 99474705,
+    "ticker_pref": "MFGSP",
+    "isin_pref": "RU0009011134",
+    "level_pref": 3,
+    "lotsize_pref": 10,
+    "minstep_pref": 0,
+    "issuesize_pref": 33056875,
+    "searchnames": [
+      "mfgs",
+      "ru0009011126",
+      "mfgsp",
+      "ru0009011134",
+      "славнефть-мегионнефтегаз",
+      "мегион"
+    ]
+  },
+  "MGKL": {
+    "name": "МГКЛ",
+    "ticker_ord": "MGKL",
+    "isin_ord": "RU000A0JVJQ8",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 1268545000,
+    "searchnames": [
+      "mgkl",
+      "ru000a0jvjq8",
+      "мгкл",
+      "mgkl"
+    ]
+  },
+  "MGNT": {
+    "name": "Магнит ПАО",
+    "ticker_ord": "MGNT",
+    "isin_ord": "RU000A0JKQU8",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 101911355,
+    "searchnames": [
+      "mgnt",
+      "ru000a0jkqu8",
+      "магнит"
+    ]
+  },
+  "MGNZ": {
+    "name": "Соликамский магн.завод(ОАО)",
+    "ticker_ord": "MGNZ",
+    "isin_ord": "RU0009100911",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 10,
+    "issuesize_ord": 398272,
+    "searchnames": [
+      "mgnz",
+      "ru0009100911",
+      "соликамский",
+      "смз"
+    ]
+  },
+  "MGTS": {
+    "name": "ПАО МГТС (5 в)",
+    "ticker_ord": "MGTS",
+    "isin_ord": "RU0009036461",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 2,
+    "issuesize_ord": 79708751,
+    "ticker_pref": "MGTSP",
+    "isin_pref": "RU0009036479",
+    "level_pref": 3,
+    "lotsize_pref": 1,
+    "minstep_pref": 2,
+    "issuesize_pref": 15514042,
+    "searchnames": [
+      "mgts",
+      "ru0009036461",
+      "mgtsp",
+      "ru0009036479",
+      "мгтс"
+    ]
+  },
+  "MISB": {
+    "name": "ТНС энерго Марий Эл ПАО",
+    "ticker_ord": "MISB",
+    "isin_ord": "RU000A0D8K33",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 121847780,
+    "ticker_pref": "MISBP",
+    "isin_pref": "RU000A0D8K41",
+    "level_pref": 3,
+    "lotsize_pref": 100,
+    "minstep_pref": 0,
+    "issuesize_pref": 10652220,
+    "searchnames": [
+      "misb",
+      "ru000a0d8k33",
+      "misbp",
+      "ru000a0d8k41",
+      "марий эл",
+      "тнсэнмарэл"
+    ]
+  },
+  "MOEX": {
+    "name": "ПАО Московская Биржа",
+    "ticker_ord": "MOEX",
+    "isin_ord": "RU000A0JR4A1",
+    "level_ord": 1,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 2276401458,
+    "searchnames": [
+      "moex",
+      "ru000a0jr4a1",
+      "моськ",
+      "московская бирж"
+    ]
+  },
+  "MRKC": {
+    "name": "ПАО Россети Центр",
+    "ticker_ord": "MRKC",
+    "isin_ord": "RU000A0JPPL8",
+    "level_ord": 2,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 42217941468,
+    "searchnames": [
+      "mrkc",
+      "ru000a0jppl8",
+      "россети центр",
+      "россцентр"
+    ]
+  },
+  "MRKK": {
+    "name": "Россети Сев. Кавказ",
+    "ticker_ord": "MRKK",
+    "isin_ord": "RU000A0JPPQ7",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 2093354170,
+    "searchnames": [
+      "mrkk",
+      "ru000a0jppq7",
+      "кавказ"
+    ]
+  },
+  "MRKP": {
+    "name": "Россети Центр и Приволжье",
+    "ticker_ord": "MRKP",
+    "isin_ord": "RU000A0JPN96",
+    "level_ord": 2,
+    "lotsize_ord": 10000,
+    "minstep_ord": 0,
+    "issuesize_ord": 112697817043,
+    "searchnames": [
+      "mrkp",
+      "ru000a0jpn96",
+      "россети центр и приволжье",
+      "рсетицп"
+    ]
+  },
+  "MRKS": {
+    "name": "Россети Сибирь",
+    "ticker_ord": "MRKS",
+    "isin_ord": "RU000A0JPPF0",
+    "level_ord": 3,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 94815163249,
+    "searchnames": [
+      "mrks",
+      "ru000a0jppf0",
+      "россети сибирь",
+      "рсетсиб"
+    ]
+  },
+  "MRKU": {
+    "name": "Россети Урал (ПАО)",
+    "ticker_ord": "MRKU",
+    "isin_ord": "RU000A0JPPT1",
+    "level_ord": 2,
+    "lotsize_ord": 10000,
+    "minstep_ord": 0,
+    "issuesize_ord": 87430485711,
+    "searchnames": [
+      "mrku",
+      "ru000a0jppt1",
+      "россети урал"
+    ]
+  },
+  "MRKV": {
+    "name": "Россети Волга",
+    "ticker_ord": "MRKV",
+    "isin_ord": "RU000A0JPPN4",
+    "level_ord": 2,
+    "lotsize_ord": 10000,
+    "minstep_ord": 0,
+    "issuesize_ord": 188307958732,
+    "searchnames": [
+      "mrkv",
+      "ru000a0jppn4",
+      "россети волга",
+      "рсетвол"
+    ]
+  },
+  "MRKY": {
+    "name": "Россети Юг  (ПАО)",
+    "ticker_ord": "MRKY",
+    "isin_ord": "RU000A0JPPG8",
+    "level_ord": 3,
+    "lotsize_ord": 10000,
+    "minstep_ord": 0,
+    "issuesize_ord": 151641426354,
+    "searchnames": [
+      "mrky",
+      "ru000a0jppg8",
+      "россети юг",
+      "россюг"
+    ]
+  },
+  "MRKZ": {
+    "name": "ПАО Россети Северо-Зад",
+    "ticker_ord": "MRKZ",
+    "isin_ord": "RU000A0JPPB9",
+    "level_ord": 2,
+    "lotsize_ord": 10000,
+    "minstep_ord": 0,
+    "issuesize_ord": 95785923138,
+    "searchnames": [
+      "mrkz",
+      "ru000a0jppb9",
+      "россети северо-запад",
+      "рсетисз"
+    ]
+  },
+  "MRSB": {
+    "name": "Мордовск.энергсбыт.комп.ПАО",
+    "ticker_ord": "MRSB",
+    "isin_ord": "RU000A0D9AJ7",
+    "level_ord": 3,
+    "lotsize_ord": 10000,
+    "minstep_ord": 0,
+    "issuesize_ord": 1345037710,
+    "searchnames": [
+      "mrsb",
+      "ru000a0d9aj7",
+      "мордовск",
+      "мордэнсб"
+    ]
+  },
+  "MSNG": {
+    "name": "МосЭнерго акции обыкн.",
+    "ticker_ord": "MSNG",
+    "isin_ord": "RU0008958863",
+    "level_ord": 1,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 39749359700,
+    "searchnames": [
+      "msng",
+      "ru0008958863",
+      "мосэнерго"
+    ]
+  },
+  "MSRS": {
+    "name": "ПАО Россети Моск.рег.",
+    "ticker_ord": "MSRS",
+    "isin_ord": "RU000A0ET7Y7",
+    "level_ord": 2,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 48707091574,
+    "searchnames": [
+      "msrs",
+      "ru000a0et7y7",
+      "россети моск",
+      "рсетимр"
+    ]
+  },
+  "MSTT": {
+    "name": "ПАО МОСТОТРЕСТ",
+    "ticker_ord": "MSTT",
+    "isin_ord": "RU0009177331",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 282215500,
+    "searchnames": [
+      "mstt",
+      "ru0009177331",
+      "мостотрест"
+    ]
+  },
+  "MTLR": {
+    "name": "Мечел ПАО",
+    "ticker_ord": "MTLR",
+    "isin_ord": "RU000A0DKXV5",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 416270745,
+    "ticker_pref": "MTLRP",
+    "isin_pref": "RU000A0JPV70",
+    "level_pref": 1,
+    "lotsize_pref": 10,
+    "minstep_pref": 0,
+    "issuesize_pref": 138756915,
+    "searchnames": [
+      "mtlr",
+      "ru000a0dkxv5",
+      "mtlrp",
+      "ru000a0jpv70",
+      "мечел"
+    ]
+  },
+  "MTSS": {
+    "name": "Мобильные ТелеСистемы ПАО",
+    "ticker_ord": "MTSS",
+    "isin_ord": "RU0007775219",
+    "level_ord": 1,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 1998381575,
+    "searchnames": [
+      "mtss",
+      "ru0007775219",
+      "мтс"
+    ]
+  },
+  "MVID": {
+    "name": "М.видео ПАО",
+    "ticker_ord": "MVID",
+    "isin_ord": "RU000A0JPGA0",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 179768227,
+    "searchnames": [
+      "mvid",
+      "ru000a0jpga0",
+      "м.видео",
+      "мвидео",
+      "mvideo"
+    ]
+  },
+  "NAUK": {
+    "name": "НПО Наука",
+    "ticker_ord": "NAUK",
+    "isin_ord": "RU000A0JRPX9",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 11789500,
+    "searchnames": [
+      "nauk",
+      "ru000a0jrpx9",
+      "наука",
+      "iнпонаука"
+    ]
+  },
+  "NFAZ": {
+    "name": "НЕФАЗ ПАО",
+    "ticker_ord": "NFAZ",
+    "isin_ord": "RU0009115604",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 8038896,
+    "searchnames": [
+      "nfaz",
+      "ru0009115604",
+      "нефаз"
+    ]
+  },
+  "NKHP": {
+    "name": "НКХП ПАО",
+    "ticker_ord": "NKHP",
+    "isin_ord": "RU000A0BLWD7",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 67597000,
+    "searchnames": [
+      "nkhp",
+      "ru000a0blwd7",
+      "нкхп"
+    ]
+  },
+  "NKNC": {
+    "name": "Нижнекамскнефтехим ПАО",
+    "ticker_ord": "NKNC",
+    "isin_ord": "RU0009100507",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 1611256000,
+    "ticker_pref": "NKNCP",
+    "isin_pref": "RU0006765096",
+    "level_pref": 3,
+    "lotsize_pref": 10,
+    "minstep_pref": 0,
+    "issuesize_pref": 218983750,
+    "searchnames": [
+      "nknc",
+      "ru0009100507",
+      "nkncp",
+      "ru0006765096",
+      "нижнекамскнефтехим",
+      "нкнх"
+    ]
+  },
+  "NKSH": {
+    "name": "Нижнекамскшина ПАО",
+    "ticker_ord": "NKSH",
+    "isin_ord": "RU0009100515",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 63731171,
+    "searchnames": [
+      "nksh",
+      "ru0009100515",
+      "нижнекамскшина",
+      "нижкамшина"
+    ]
+  },
+  "NLMK": {
+    "name": "ПАО НЛМК",
+    "ticker_ord": "NLMK",
+    "isin_ord": "RU0009046452",
+    "level_ord": 1,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 5993227240,
+    "searchnames": [
+      "nlmk",
+      "ru0009046452",
+      "нлмк"
+    ]
+  },
+  "NMTP": {
+    "name": "НМТП (ПАО)",
+    "ticker_ord": "NMTP",
+    "isin_ord": "RU0009084446",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 19259815400,
+    "searchnames": [
+      "nmtp",
+      "ru0009084446",
+      "нмтп"
+    ]
+  },
+  "NNSB": {
+    "name": "ТНС энерго Нижний Новг.ПАО",
+    "ticker_ord": "NNSB",
+    "isin_ord": "RU000A0ET5A1",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 10,
+    "issuesize_ord": 3919400,
+    "ticker_pref": "NNSBP",
+    "isin_pref": "RU000A0ET5B9",
+    "level_pref": 3,
+    "lotsize_pref": 1,
+    "minstep_pref": 2,
+    "issuesize_pref": 1063512,
+    "searchnames": [
+      "nnsb",
+      "ru000a0et5a1",
+      "nnsbp",
+      "ru000a0et5b9",
+      "тнс энерго нижний новг.",
+      "тнсэннн"
+    ]
+  },
+  "NSVZ": {
+    "name": "Наука-Связь ПАО",
+    "ticker_ord": "NSVZ",
+    "isin_ord": "RU000A0JQLB6",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 15701562,
+    "searchnames": [
+      "nsvz",
+      "ru000a0jqlb6",
+      "наука-связь",
+      "iнаукасвяз"
+    ]
+  },
+  "NVTK": {
+    "name": "ПАО НОВАТЭК",
+    "ticker_ord": "NVTK",
+    "isin_ord": "RU000A0DKVS5",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 3036306000,
+    "searchnames": [
+      "nvtk",
+      "ru000a0dkvs5",
+      "новатэк",
+      "novatek"
+    ]
+  },
+  "OGKB": {
+    "name": "ОГК-2 ПАО",
+    "ticker_ord": "OGKB",
+    "isin_ord": "RU000A0JNG55",
+    "level_ord": 2,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 136207331098,
+    "searchnames": [
+      "ogkb",
+      "ru000a0jng55",
+      "огк-2",
+      "ogk-2"
+    ]
+  },
+  "OMZZP": {
+    "name": "Объединён.  маш. заводы",
+    "ticker_pref": "OMZZP",
+    "isin_pref": "RU0009090559",
+    "level_pref": 3,
+    "lotsize_pref": 1,
+    "minstep_pref": 20,
+    "issuesize_pref": 2750000,
+    "searchnames": [
+      "omzzp",
+      "ru0009090559",
+      "омз"
+    ]
+  },
+  "OZON": {
+    "name": "МКПАО Озон",
+    "ticker_ord": "OZON",
+    "isin_ord": "RU000A10CW95",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 216413733,
+    "searchnames": [
+      "ozon",
+      "ru000a10cw95",
+      "озон",
+      "ozon"
+    ]
+  },
+  "OZPH": {
+    "name": "Озон Фармацевтика",
+    "ticker_ord": "OZPH",
+    "isin_ord": "RU000A109B25",
+    "level_ord": 1,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 1167690558,
+    "searchnames": [
+      "ozph",
+      "ru000a109b25",
+      "озон фармацевтика",
+      "iозонфарм",
+      "фарма"
+    ]
+  },
+  "PAZA": {
+    "name": "Павловский автобус ПАО",
+    "ticker_ord": "PAZA",
+    "isin_ord": "RU0009083240",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 20,
+    "issuesize_ord": 1567904,
+    "searchnames": [
+      "paza",
+      "ru0009083240",
+      "павловский автобус",
+      "павлавт"
+    ]
+  },
+  "PHOR": {
+    "name": "ФосАгро ПАО",
+    "ticker_ord": "PHOR",
+    "isin_ord": "RU000A0JRKT8",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 1,
+    "issuesize_ord": 129500000,
+    "searchnames": [
+      "phor",
+      "ru000a0jrkt8",
+      "фосагро"
+    ]
+  },
+  "PIKK": {
+    "name": "ПИК СЗ (ПАО)",
+    "ticker_ord": "PIKK",
+    "isin_ord": "RU000A0JP7J7",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 660497344,
+    "searchnames": [
+      "pikk",
+      "ru000a0jp7j7",
+      "пик "
+    ]
+  },
+  "PLZL": {
+    "name": "Полюс ПАО",
+    "ticker_ord": "PLZL",
+    "isin_ord": "RU000A0JNAA8",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 1360694001,
+    "searchnames": [
+      "plzl",
+      "ru000a0jnaa8",
+      "полюс"
+    ]
+  },
+  "PMSB": {
+    "name": "Пермэнергосбыт ПАО",
+    "ticker_ord": "PMSB",
+    "isin_ord": "RU000A0ET123",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 36210960,
+    "ticker_pref": "PMSBP",
+    "isin_pref": "RU000A0ET156",
+    "level_pref": 3,
+    "lotsize_pref": 10,
+    "minstep_pref": 0,
+    "issuesize_pref": 11353500,
+    "searchnames": [
+      "pmsb",
+      "ru000a0et123",
+      "pmsbp",
+      "ru000a0et156",
+      "пермэнергосбыт",
+      "пермьэнсб"
+    ]
+  },
+  "POSI": {
+    "name": "Группа Позитив",
+    "ticker_ord": "POSI",
+    "isin_ord": "RU000A103X66",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 71214000,
+    "searchnames": [
+      "posi",
+      "ru000a103x66",
+      "позитив технолоджи",
+      "позитив текнолоджи",
+      "PT",
+      "iпозитив"
+    ]
+  },
+  "PRFN": {
+    "name": "ТЕПЛАНТ восток (ПАО)",
+    "ticker_ord": "PRFN",
+    "isin_ord": "RU000A0JNXF9",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 838287450,
+    "searchnames": [
+      "prfn",
+      "ru000a0jnxf9",
+      "теплант"
+    ]
+  },
+  "PRMB": {
+    "name": "АКБ Приморье",
+    "ticker_ord": "PRMB",
+    "isin_ord": "RU000A0DPNQ5",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 200,
+    "issuesize_ord": 250000,
+    "searchnames": [
+      "prmb",
+      "ru000a0dpnq5",
+      "приморье"
+    ]
+  },
+  "PRMD": {
+    "name": "ПРОМОМЕД",
+    "ticker_ord": "PRMD",
+    "isin_ord": "RU000A108JF7",
+    "level_ord": 2,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 212500000,
+    "searchnames": [
+      "prmd",
+      "ru000a108jf7",
+      "промомед",
+      "iпромомед"
+    ]
+  },
+  "RAGR": {
+    "name": "Группа Русагро",
+    "ticker_ord": "RAGR",
+    "isin_ord": "RU000A0JQUZ6",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 958749600,
+    "searchnames": [
+      "ragr",
+      "ru000a0jquz6",
+      "русагро"
+    ]
+  },
+  "RASP": {
+    "name": "ПАО Распадская",
+    "ticker_ord": "RASP",
+    "isin_ord": "RU000A0B90N8",
+    "level_ord": 2,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 665733918,
+    "searchnames": [
+      "rasp",
+      "ru000a0b90n8",
+      "распадск"
+    ]
+  },
+  "RBCM": {
+    "name": "ГК РБК ПАО",
+    "ticker_ord": "RBCM",
+    "isin_ord": "RU000A0JR6A6",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 365631010,
+    "searchnames": [
+      "rbcm",
+      "ru000a0jr6a6",
+      "РБК"
+    ]
+  },
+  "RDRB": {
+    "name": "РоссийскийДорож Банк ПАО",
+    "ticker_ord": "RDRB",
+    "isin_ord": "RU000A0JU6Q7",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 27492735,
+    "searchnames": [
+      "rdrb",
+      "ru000a0ju6q7",
+      "российский дорожный",
+      "рдбанк",
+      "росдорбанк"
+    ]
+  },
+  "RENI": {
+    "name": "Ренессанс Страхование",
+    "ticker_ord": "RENI",
+    "isin_ord": "RU000A0ZZM04",
+    "level_ord": 1,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 556952780,
+    "searchnames": [
+      "reni",
+      "ru000a0zzm04",
+      "ренессанс"
+    ]
+  },
+  "RGSS": {
+    "name": "Росгосстрах СК ПАО",
+    "ticker_ord": "RGSS",
+    "isin_ord": "RU0008010855",
+    "level_ord": 3,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 489503740915,
+    "searchnames": [
+      "rgss",
+      "ru0008010855",
+      "росгосстрах",
+      "ргс"
+    ]
+  },
+  "RKKE": {
+    "name": "РКК Энергия им.С.П.Королева",
+    "ticker_ord": "RKKE",
+    "isin_ord": "RU0009095939",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 10,
+    "issuesize_ord": 1842049,
+    "searchnames": [
+      "rkke",
+      "ru0009095939",
+      "ркк",
+      "энергияркк"
+    ]
+  },
+  "RNFT": {
+    "name": "РуссНефть НК ПАО",
+    "ticker_ord": "RNFT",
+    "isin_ord": "RU000A0JSE60",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 294120000,
+    "searchnames": [
+      "rnft",
+      "ru000a0jse60",
+      "русснефть"
+    ]
+  },
+  "ROLO": {
+    "name": "Русолово ПАО",
+    "ticker_ord": "ROLO",
+    "isin_ord": "RU000A0JU1B0",
+    "level_ord": 3,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 30001000000,
+    "searchnames": [
+      "rolo",
+      "ru000a0ju1b0",
+      "русолово"
+    ]
+  },
+  "ROSN": {
+    "name": "ПАО НК Роснефть",
+    "ticker_ord": "ROSN",
+    "isin_ord": "RU000A0J2Q06",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 10598177817,
+    "searchnames": [
+      "rosn",
+      "ru000a0j2q06",
+      "роснефть"
+    ]
+  },
+  "ROST": {
+    "name": "РОСИНТЕР РЕСТОРАНТС (ПАО)",
+    "ticker_ord": "ROST",
+    "isin_ord": "RU000A0JP922",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 16305334,
+    "searchnames": [
+      "rost",
+      "ru000a0jp922",
+      "росинтер",
+      "ресторантс"
+    ]
+  },
+  "RTGZ": {
+    "name": "Газпром газорасп Р-н-Д ПАО",
+    "ticker_ord": "RTGZ",
+    "isin_ord": "RU000A0JPG04",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 200,
+    "issuesize_ord": 120246,
+    "searchnames": [
+      "rtgz",
+      "ru000a0jpg04",
+      "газпром газорасп р-н-д",
+      "газпром газораспределение р-н-д",
+      "гр ростов",
+      "газпром газораспределение ростов",
+      "газпром газорасп ростов"
+    ]
+  },
+  "RTKM": {
+    "name": "Ростелеком (ПАО).",
+    "ticker_ord": "RTKM",
+    "isin_ord": "RU0008943394",
+    "level_ord": 1,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 3282997929,
+    "ticker_pref": "RTKMP",
+    "isin_pref": "RU0009046700",
+    "level_pref": 1,
+    "lotsize_pref": 10,
+    "minstep_pref": 0,
+    "issuesize_pref": 209565147,
+    "searchnames": [
+      "rtkm",
+      "ru0008943394",
+      "rtkmp",
+      "ru0009046700",
+      "ростел",
+      "РТК"
+    ]
+  },
+  "RTSB": {
+    "name": "ТНС энерго Ростов. ПАО",
+    "ticker_ord": "RTSB",
+    "isin_ord": "RU000A0D8PB4",
+    "level_ord": 3,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 8128764676,
+    "ticker_pref": "RTSBP",
+    "isin_pref": "RU000A0D8PC2",
+    "level_pref": 3,
+    "lotsize_pref": 1000,
+    "minstep_pref": 0,
+    "issuesize_pref": 925737256,
+    "searchnames": [
+      "rtsb",
+      "ru000a0d8pb4",
+      "rtsbp",
+      "ru000a0d8pc2",
+      "тнс энерго ростов",
+      "тнсэнрст"
+    ]
+  },
+  "RUAL": {
+    "name": "РУСАЛ ОК МКПАО",
+    "ticker_ord": "RUAL",
+    "isin_ord": "RU000A1025V3",
+    "level_ord": 1,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 15193014862,
+    "searchnames": [
+      "rual",
+      "ru000a1025v3",
+      "русал"
+    ]
+  },
+  "RUSI": {
+    "name": "РУСС-ИНВЕСТ ИК ПАО",
+    "ticker_ord": "RUSI",
+    "isin_ord": "RU000A0JQ9W5",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 109000000,
+    "searchnames": [
+      "rusi",
+      "ru000a0jq9w5",
+      "русс-инвест",
+      "икрусс-инв"
+    ]
+  },
+  "RZSB": {
+    "name": "Рязанская энергосб.комп ПАО",
+    "ticker_ord": "RZSB",
+    "isin_ord": "RU000A0D9AF5",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 206940220,
+    "searchnames": [
+      "rzsb",
+      "ru000a0d9af5",
+      "рязанская энергосб",
+      "рязэнсб"
+    ]
+  },
+  "SAGO": {
+    "name": "Самараэнерго (ПАО) -",
+    "ticker_ord": "SAGO",
+    "isin_ord": "RU0009098255",
+    "level_ord": 3,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 3480630296,
+    "ticker_pref": "SAGOP",
+    "isin_pref": "RU0009084495",
+    "level_pref": 3,
+    "lotsize_pref": 1000,
+    "minstep_pref": 0,
+    "issuesize_pref": 364918444,
+    "searchnames": [
+      "sago",
+      "ru0009098255",
+      "sagop",
+      "ru0009084495",
+      "самараэнерго",
+      "самарэн"
+    ]
+  },
+  "SARE": {
+    "name": "Саратовэнерго(ПАО)",
+    "ticker_ord": "SARE",
+    "isin_ord": "RU0009100754",
+    "level_ord": 3,
+    "lotsize_ord": 10000,
+    "minstep_ord": 0,
+    "issuesize_ord": 4865127996,
+    "ticker_pref": "SAREP",
+    "isin_pref": "RU0009100762",
+    "level_pref": 3,
+    "lotsize_pref": 10000,
+    "minstep_pref": 0,
+    "issuesize_pref": 1493316000,
+    "searchnames": [
+      "sare",
+      "ru0009100754",
+      "sarep",
+      "ru0009100762",
+      "саратовэнерго",
+      "саратэн"
+    ]
+  },
+  "SBER": {
+    "name": "Сбербанк России ПАО",
+    "ticker_ord": "SBER",
+    "isin_ord": "RU0009029540",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 21586948000,
+    "ticker_pref": "SBERP",
+    "isin_pref": "RU0009029557",
+    "level_pref": 1,
+    "lotsize_pref": 1,
+    "minstep_pref": 0,
+    "issuesize_pref": 1000000000,
+    "searchnames": [
+      "sber",
+      "ru0009029540",
+      "sberp",
+      "ru0009029557",
+      "сбер"
+    ]
+  },
+  "SELG": {
+    "name": "ПАО Селигдар ",
+    "ticker_ord": "SELG",
+    "isin_ord": "RU000A0JPR50",
+    "level_ord": 1,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 1030000000,
+    "searchnames": [
+      "selg",
+      "ru000a0jpr50",
+      "селигдар"
+    ]
+  },
+  "SFIN": {
+    "name": "ЭсЭфАй ПАО",
+    "ticker_ord": "SFIN",
+    "isin_ord": "RU000A0JVW89",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 50237005,
+    "searchnames": [
+      "sfin",
+      "ru000a0jvw89",
+      "эсэфай",
+      "sfi"
+    ]
+  },
+  "SGZH": {
+    "name": "Сегежа",
+    "ticker_ord": "SGZH",
+    "isin_ord": "RU000A102XG9",
+    "level_ord": 1,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 78450000000,
+    "searchnames": [
+      "sgzh",
+      "ru000a102xg9",
+      "сегежа",
+      "segezha"
+    ]
+  },
+  "SIBN": {
+    "name": "Газпром нефть ПАО",
+    "ticker_ord": "SIBN",
+    "isin_ord": "RU0009062467",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 4741299639,
+    "searchnames": [
+      "sibn",
+      "ru0009062467",
+      "газпрнефть",
+      "газпромнефть",
+      "газпром нефть",
+      "ГПН"
+    ]
+  },
+  "SLEN": {
+    "name": "ПАО Сахалинэнерго",
+    "ticker_ord": "SLEN",
+    "isin_ord": "RU0009280465",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 2237123773,
+    "searchnames": [
+      "slen",
+      "ru0009280465",
+      "сахалинэнерго",
+      "сахэнер"
+    ]
+  },
+  "SMLT": {
+    "name": "ГК Самолет",
+    "ticker_ord": "SMLT",
+    "isin_ord": "RU000A0ZZG02",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 61579358,
+    "searchnames": [
+      "smlt",
+      "ru000a0zzg02",
+      "самолет"
+    ]
+  },
+  "SNGS": {
+    "name": "Сургутнефтегаз ПАО акции об.",
+    "ticker_ord": "SNGS",
+    "isin_ord": "RU0008926258",
+    "level_ord": 2,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 35725994705,
+    "ticker_pref": "SNGSP",
+    "isin_pref": "RU0009029524",
+    "level_pref": 2,
+    "lotsize_pref": 10,
+    "minstep_pref": 0,
+    "issuesize_pref": 7701998235,
+    "searchnames": [
+      "sngs",
+      "ru0008926258",
+      "sngsp",
+      "ru0009029524",
+      "сургутнефтегаз",
+      "сургнфгз"
+    ]
+  },
+  "SOFL": {
+    "name": "Софтлайн",
+    "ticker_ord": "SOFL",
+    "isin_ord": "RU000A0ZZBC2",
+    "level_ord": 2,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 400002000,
+    "searchnames": [
+      "sofl",
+      "ru000a0zzbc2",
+      "софтлайн",
+      "iсофтлайн",
+      "softline"
+    ]
+  },
+  "SPBE": {
+    "name": "СПБ Биржа",
+    "ticker_ord": "SPBE",
+    "isin_ord": "RU000A0JQ9P9",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 132843907,
+    "searchnames": [
+      "spbe",
+      "ru000a0jq9p9",
+      "спб биржа",
+      "спббиржа",
+      "spb exchange"
+    ]
+  },
+  "STSB": {
+    "name": "Ставрополэнергосбыт ПАО",
+    "ticker_ord": "STSB",
+    "isin_ord": "RU000A0ET1W4",
+    "level_ord": 3,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 859074636,
+    "ticker_pref": "STSBP",
+    "isin_pref": "RU000A0ET1Z7",
+    "level_pref": 3,
+    "lotsize_pref": 1000,
+    "minstep_pref": 0,
+    "issuesize_pref": 262100364,
+    "searchnames": [
+      "stsb",
+      "ru000a0et1w4",
+      "stsbp",
+      "ru000a0et1z7",
+      "ставрополэнергосбыт",
+      "ставрэнсб"
+    ]
+  },
+  "SVAV": {
+    "name": "ПАО СОЛЛЕРС",
+    "ticker_ord": "SVAV",
+    "isin_ord": "RU0006914488",
+    "level_ord": 2,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 31486001,
+    "searchnames": [
+      "svav",
+      "ru0006914488",
+      "соллерс",
+      "sollers"
+    ]
+  },
+  "SVCB": {
+    "name": "Совкомбанк",
+    "ticker_ord": "SVCB",
+    "isin_ord": "RU000A0ZZAC4",
+    "level_ord": 1,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 22516228905,
+    "searchnames": [
+      "svcb",
+      "ru000a0zzac4",
+      "совкомбанк",
+      "sovcombank"
+    ]
+  },
+  "SVET": {
+    "name": "Светофор Групп",
+    "ticker_ord": "SVET",
+    "isin_ord": "RU000A100592",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 22333500,
+    "ticker_pref": "SVETP",
+    "isin_pref": "RU000A1005A9",
+    "level_pref": 3,
+    "lotsize_pref": 1,
+    "minstep_pref": 0,
+    "issuesize_pref": 2481500,
+    "searchnames": [
+      "svet",
+      "ru000a100592",
+      "svetp",
+      "ru000a1005a9",
+      "светофор"
+    ]
+  },
+  "T": {
+    "name": "Т-Технологии МКПАО",
+    "ticker_ord": "T",
+    "isin_ord": "RU000A107UL4",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 268274786,
+    "searchnames": [
+      "ru000a107ul4",
+      "т-техно",
+      "тбанк",
+      "тинькофф",
+      "тинек",
+      "тинёк"
+    ]
+  },
+  "TASB": {
+    "name": "Тамбов.энергсбыт.комп.ПАО",
+    "ticker_ord": "TASB",
+    "isin_ord": "RU000A0D8NG8",
+    "level_ord": 3,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 1525986880,
+    "ticker_pref": "TASBP",
+    "isin_pref": "RU000A0D8NH6",
+    "level_pref": 3,
+    "lotsize_pref": 10000,
+    "minstep_pref": 0,
+    "issuesize_pref": 217961420,
+    "searchnames": [
+      "tasb",
+      "ru000a0d8ng8",
+      "tasbp",
+      "ru000a0d8nh6",
+      "тамбов энергсбыт",
+      "тамбэнсб",
+      "тамбовская энергсбыт"
+    ]
+  },
+  "TATN": {
+    "name": "ПАО Татнефть",
+    "ticker_ord": "TATN",
+    "isin_ord": "RU0009033591",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 2178690700,
+    "ticker_pref": "TATNP",
+    "isin_pref": "RU0006944147",
+    "level_pref": 1,
+    "lotsize_pref": 1,
+    "minstep_pref": 0,
+    "issuesize_pref": 147508500,
+    "searchnames": [
+      "tatn",
+      "ru0009033591",
+      "tatnp",
+      "ru0006944147",
+      "татнефт"
+    ]
+  },
+  "TGKA": {
+    "name": " ПАО ТГК-1",
+    "ticker_ord": "TGKA",
+    "isin_ord": "RU000A0JNUD0",
+    "level_ord": 1,
+    "lotsize_ord": 100000,
+    "minstep_ord": 0,
+    "issuesize_ord": 3854341416571,
+    "searchnames": [
+      "tgka",
+      "ru000a0jnud0",
+      "тгк-1"
+    ]
+  },
+  "TGKB": {
+    "name": " ПАО ТГК-2",
+    "ticker_ord": "TGKB",
+    "isin_ord": "RU000A0JNGS7",
+    "level_ord": 3,
+    "lotsize_ord": 1000000,
+    "minstep_ord": 0,
+    "issuesize_ord": 1458404850747,
+    "ticker_pref": "TGKBP",
+    "isin_pref": "RU000A0JNGT5",
+    "level_pref": 3,
+    "lotsize_pref": 100000,
+    "minstep_pref": 0,
+    "issuesize_pref": 16500533681,
+    "searchnames": [
+      "tgkb",
+      "ru000a0jngs7",
+      "tgkbp",
+      "ru000a0jngt5",
+      "тгк-2"
+    ]
+  },
+  "TGKN": {
+    "name": " ПАО ТГК-14",
+    "ticker_ord": "TGKN",
+    "isin_ord": "RU000A0H1ES3",
+    "level_ord": 2,
+    "lotsize_ord": 100000,
+    "minstep_ord": 0,
+    "issuesize_ord": 1357945609114,
+    "searchnames": [
+      "tgkn",
+      "ru000a0h1es3",
+      "тгк-14"
+    ]
+  },
+  "TNSE": {
+    "name": "ПАО ГК ТНС энерго",
+    "ticker_ord": "TNSE",
+    "isin_ord": "RU000A0JUCQ5",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 5,
+    "issuesize_ord": 13668239,
+    "searchnames": [
+      "tnse",
+      "ru000a0jucq5",
+      "тнс энерго",
+      "тнсэнрг"
+    ]
+  },
+  "TORS": {
+    "name": " ПАО Россети Томск",
+    "ticker_ord": "TORS",
+    "isin_ord": "RU000A0ETZF2",
+    "level_ord": 3,
+    "lotsize_ord": 10000,
+    "minstep_ord": 0,
+    "issuesize_ord": 3819315580,
+    "ticker_pref": "TORSP",
+    "isin_pref": "RU000A0ETZM8",
+    "level_pref": 3,
+    "lotsize_pref": 10000,
+    "minstep_pref": 0,
+    "issuesize_pref": 576693000,
+    "searchnames": [
+      "tors",
+      "ru000a0etzf2",
+      "torsp",
+      "ru000a0etzm8",
+      "россети томск",
+      "рстомск"
+    ]
+  },
+  "TRMK": {
+    "name": "ПАО ТМК",
+    "ticker_ord": "TRMK",
+    "isin_ord": "RU000A0B6NK6",
+    "level_ord": 2,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 1052000000,
+    "searchnames": [
+      "trmk",
+      "ru000a0b6nk6",
+      "тмк"
+    ]
+  },
+  "TRNFP": {
+    "name": "Транснефть ПАО акц.пр.",
+    "ticker_pref": "TRNFP",
+    "isin_pref": "RU0009091573",
+    "level_pref": 1,
+    "lotsize_pref": 1,
+    "minstep_pref": 0,
+    "issuesize_pref": 155487500,
+    "searchnames": [
+      "trnfp",
+      "ru0009091573",
+      "транснефть",
+      "транснф",
+      "трансух"
+    ]
+  },
+  "TTLK": {
+    "name": "Таттелеком ПАО",
+    "ticker_ord": "TTLK",
+    "isin_ord": "RU000A0HM5C1",
+    "level_ord": 3,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 20843976400,
+    "searchnames": [
+      "ttlk",
+      "ru000a0hm5c1",
+      "таттел"
+    ]
+  },
+  "TUZA": {
+    "name": "Туймаз. завод автобетоновозов",
+    "ticker_ord": "TUZA",
+    "isin_ord": "RU000A0HL7A2",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 8220000,
+    "searchnames": [
+      "tuza",
+      "ru000a0hl7a2",
+      "туймаз",
+      "автобетоновоз"
+    ]
+  },
+  "UGLD": {
+    "name": "ЮГК",
+    "ticker_ord": "UGLD",
+    "isin_ord": "RU000A0JPP37",
+    "level_ord": 2,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 222778849052,
+    "searchnames": [
+      "ugld",
+      "ru000a0jpp37",
+      "югк"
+    ]
+  },
+  "UKUZ": {
+    "name": "Южный Кузбасс ПАО",
+    "ticker_ord": "UKUZ",
+    "isin_ord": "RU0005294775",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 2,
+    "issuesize_ord": 36149002,
+    "searchnames": [
+      "ukuz",
+      "ru0005294775",
+      "кузбасс"
+    ]
+  },
+  "UNAC": {
+    "name": "Об.авиастр.корп. ПАО",
+    "ticker_ord": "UNAC",
+    "isin_ord": "RU000A0JPLZ7",
+    "level_ord": 3,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 1009366990290,
+    "searchnames": [
+      "unac",
+      "ru000a0jplz7",
+      "объединенная авиастр",
+      "iавиасткао",
+      "ОАК"
+    ]
+  },
+  "UNKL": {
+    "name": "Южно-Уральский никел. комб.",
+    "ticker_ord": "UNKL",
+    "isin_ord": "RU0004887991",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 10,
+    "issuesize_ord": 599737,
+    "searchnames": [
+      "unkl",
+      "ru0004887991",
+      "южно-уральский никел",
+      "юунк",
+      "никелевый комбинат"
+    ]
+  },
+  "UPRO": {
+    "name": "Юнипро ПАО",
+    "ticker_ord": "UPRO",
+    "isin_ord": "RU000A0JNGA5",
+    "level_ord": 1,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 63048706145,
+    "searchnames": [
+      "upro",
+      "ru000a0jnga5",
+      "юнипро",
+      "unipro"
+    ]
+  },
+  "URKZ": {
+    "name": "ПАО Уральская кузница",
+    "ticker_ord": "URKZ",
+    "isin_ord": "RU000A0JPFY2",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 54776100,
+    "searchnames": [
+      "urkz",
+      "ru000a0jpfy2",
+      "уральская кузница",
+      "уркузница"
+    ]
+  },
+  "USBN": {
+    "name": "БАНК УРАЛСИБ ПАО",
+    "ticker_ord": "USBN",
+    "isin_ord": "RU0006929536",
+    "level_ord": 3,
+    "lotsize_ord": 10000,
+    "minstep_ord": 0,
+    "issuesize_ord": 360134697357,
+    "searchnames": [
+      "usbn",
+      "ru0006929536",
+      "уралсиб"
+    ]
+  },
+  "UTAR": {
+    "name": "Авиакомпания ЮТэйр (ПАО)",
+    "ticker_ord": "UTAR",
+    "isin_ord": "RU0007661385",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 7896123268,
+    "searchnames": [
+      "utar",
+      "ru0007661385",
+      "ютэйр",
+      "ютэйр",
+      "utair"
+    ]
+  },
+  "UWGN": {
+    "name": "ПАО НПК ОВК",
+    "ticker_ord": "UWGN",
+    "isin_ord": "RU000A0JVBT9",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 2905885544,
+    "searchnames": [
+      "uwgn",
+      "ru000a0jvbt9",
+      "овк"
+    ]
+  },
+  "VEON-RX": {
+    "name": "VEON Ltd. ORD SHS",
+    "ticker_ord": "VEON-RX",
+    "isin_ord": "BMG9349W1038",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 1749127404,
+    "searchnames": [
+      "veon-rx",
+      "bmg9349w1038",
+      "veon"
+    ]
+  },
+  "VGSB": {
+    "name": "Волгоград.энергосбыткомп ПАО",
+    "ticker_ord": "VGSB",
+    "isin_ord": "RU000A0D8L73",
+    "level_ord": 3,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 319595965,
+    "ticker_pref": "VGSBP",
+    "isin_pref": "RU000A0D8L57",
+    "level_pref": 3,
+    "lotsize_pref": 1000,
+    "minstep_pref": 0,
+    "issuesize_pref": 80499134,
+    "searchnames": [
+      "vgsb",
+      "ru000a0d8l73",
+      "vgsbp",
+      "ru000a0d8l57",
+      "волгоград энергосбыт",
+      "волгэнсб",
+      "волгоградская энергосбыт"
+    ]
+  },
+  "VJGZ": {
+    "name": "ННК-Варьеганнефтегаз ПАО",
+    "ticker_ord": "VJGZ",
+    "isin_ord": "RU0009046460",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 5,
+    "issuesize_ord": 18091110,
+    "ticker_pref": "VJGZP",
+    "isin_pref": "RU0007964789",
+    "level_pref": 3,
+    "lotsize_pref": 1,
+    "minstep_pref": 2,
+    "issuesize_pref": 5883050,
+    "searchnames": [
+      "vjgz",
+      "ru0009046460",
+      "vjgzp",
+      "ru0007964789",
+      "варьеган"
+    ]
+  },
+  "VKCO": {
+    "name": "Международная компания ПАО ВК",
+    "ticker_ord": "VKCO",
+    "isin_ord": "RU000A106YF0",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 572904180,
+    "searchnames": [
+      "vkco",
+      "ru000a106yf0",
+      "вк ",
+      "vk ",
+      "вконтакт"
+    ]
+  },
+  "VLHZ": {
+    "name": "Владимирский химич.з-д(ПАО)",
+    "ticker_ord": "VLHZ",
+    "isin_ord": "RU0007984761",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 5005605,
+    "searchnames": [
+      "vlhz",
+      "ru0007984761",
+      "владимирский химич",
+      "вхз"
+    ]
+  },
+  "VRSB": {
+    "name": "ТНС энерго Воронеж ПАО",
+    "ticker_ord": "VRSB",
+    "isin_ord": "RU000A0DPG67",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 56151024,
+    "ticker_pref": "VRSBP",
+    "isin_pref": "RU000A0DPG75",
+    "level_pref": 3,
+    "lotsize_pref": 10,
+    "minstep_pref": 0,
+    "issuesize_pref": 18716678,
+    "searchnames": [
+      "vrsb",
+      "ru000a0dpg67",
+      "vrsbp",
+      "ru000a0dpg75",
+      "энерго воронеж",
+      "тнсэнвор"
+    ]
+  },
+  "VSEH": {
+    "name": "ВИ.ру",
+    "ticker_ord": "VSEH",
+    "isin_ord": "RU000A108K09",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 500000000,
+    "searchnames": [
+      "vseh",
+      "ru000a108k09",
+      "ви.ру",
+      "все инструмент",
+      "vi.ru"
+    ]
+  },
+  "VSMO": {
+    "name": "Корп. ВСМПО-АВИСМА (ПАО)",
+    "ticker_ord": "VSMO",
+    "isin_ord": "RU0009100291",
+    "level_ord": 2,
+    "lotsize_ord": 1,
+    "minstep_ord": 20,
+    "issuesize_ord": 11529538,
+    "searchnames": [
+      "vsmo",
+      "ru0009100291",
+      "всмпо",
+      "авсма"
+    ]
+  },
+  "VSYD": {
+    "name": "Выборгский Суд.Завод ПАО",
+    "ticker_ord": "VSYD",
+    "isin_ord": "RU0006334372",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 50,
+    "issuesize_ord": 1891250,
+    "ticker_pref": "VSYDP",
+    "isin_pref": "RU0006334380",
+    "level_pref": 3,
+    "lotsize_pref": 1,
+    "minstep_pref": 50,
+    "issuesize_pref": 51839,
+    "searchnames": [
+      "vsyd",
+      "ru0006334372",
+      "vsydp",
+      "ru0006334380",
+      "выборгский суд",
+      "выбсудз"
+    ]
+  },
+  "VTBR": {
+    "name": " ПАО Банк ВТБ",
+    "ticker_ord": "VTBR",
+    "isin_ord": "RU000A0JP5V6",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 6620418282,
+    "searchnames": [
+      "vtbr",
+      "ru000a0jp5v6",
+      "втб"
+    ]
+  },
+  "WTCM": {
+    "name": "Центр междун. торговлиПАО",
+    "ticker_ord": "WTCM",
+    "isin_ord": "RU0008137070",
+    "level_ord": 3,
+    "lotsize_ord": 100,
+    "minstep_ord": 0,
+    "issuesize_ord": 1083000000,
+    "ticker_pref": "WTCMP",
+    "isin_pref": "RU0008137088",
+    "level_pref": 3,
+    "lotsize_pref": 100,
+    "minstep_pref": 0,
+    "issuesize_pref": 162000000,
+    "searchnames": [
+      "wtcm",
+      "ru0008137070",
+      "wtcmp",
+      "ru0008137088",
+      "центр междун",
+      "цмт",
+      "cmt"
+    ]
+  },
+  "WUSH": {
+    "name": "ВУШ Холдинг",
+    "ticker_ord": "WUSH",
+    "isin_ord": "RU000A105EX7",
+    "level_ord": 2,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 111382432,
+    "searchnames": [
+      "wush",
+      "ru000a105ex7",
+      "вуш",
+      "iвуш",
+      "whoosh"
+    ]
+  },
+  "X5": {
+    "name": "Корпоративный центр ИКС 5",
+    "ticker_ord": "X5",
+    "isin_ord": "RU000A108X38",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 271572872,
+    "searchnames": [
+      "x5",
+      "ru000a108x38",
+      "икс 5",
+      "икс5",
+      "х5"
+    ]
+  },
+  "YAKG": {
+    "name": "Якутская топл.-энерг. комп.",
+    "ticker_ord": "YAKG",
+    "isin_ord": "RU0007796819",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 826919375,
+    "searchnames": [
+      "yakg",
+      "ru0007796819",
+      "якутская топл",
+      "ятэк"
+    ]
+  },
+  "YDEX": {
+    "name": "МКПАО ЯНДЕКС",
+    "ticker_ord": "YDEX",
+    "isin_ord": "RU000A107T19",
+    "level_ord": 1,
+    "lotsize_ord": 1,
+    "minstep_ord": 0,
+    "issuesize_ord": 393959444,
+    "searchnames": [
+      "ydex",
+      "ru000a107t19",
+      "яндекс",
+      "yandex",
+      "яша",
+      "яшу"
+    ]
+  },
+  "YKEN": {
+    "name": "АК Якутскэнерго (ПАО)",
+    "ticker_ord": "YKEN",
+    "isin_ord": "RU0009257075",
+    "level_ord": 3,
+    "lotsize_ord": 10000,
+    "minstep_ord": 0,
+    "issuesize_ord": 10187741424,
+    "ticker_pref": "YKENP",
+    "isin_pref": "RU0007796827",
+    "level_pref": 3,
+    "lotsize_pref": 10000,
+    "minstep_pref": 0,
+    "issuesize_pref": 1332635125,
+    "searchnames": [
+      "yken",
+      "ru0009257075",
+      "ykenp",
+      "ru0007796827",
+      "якутскэнерго",
+      "якутскэнрг"
+    ]
+  },
+  "YRSB": {
+    "name": "ТНС энерго Ярославль ПАО",
+    "ticker_ord": "YRSB",
+    "isin_ord": "RU000A0D8760",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 2,
+    "issuesize_ord": 17143584,
+    "ticker_pref": "YRSBP",
+    "isin_pref": "RU000A0D88B3",
+    "level_pref": 3,
+    "lotsize_pref": 10,
+    "minstep_pref": 0,
+    "issuesize_pref": 4507320,
+    "searchnames": [
+      "yrsb",
+      "ru000a0d8760",
+      "yrsbp",
+      "ru000a0d88b3",
+      "энерго ярославль",
+      "тнсэняр"
+    ]
+  },
+  "ZAYM": {
+    "name": "Займер",
+    "ticker_ord": "ZAYM",
+    "isin_ord": "RU000A107RM8",
+    "level_ord": 3,
+    "lotsize_ord": 10,
+    "minstep_ord": 0,
+    "issuesize_ord": 100000000,
+    "searchnames": [
+      "zaym",
+      "ru000a107rm8",
+      "займер",
+      "zaymer"
+    ]
+  },
+  "ZILL": {
+    "name": "Завод им. И.А.Лихачева ПАО",
+    "ticker_ord": "ZILL",
+    "isin_ord": "RU0009086193",
+    "level_ord": 3,
+    "lotsize_ord": 1,
+    "minstep_ord": 5,
+    "issuesize_ord": 2659962,
+    "searchnames": [
+      "zill",
+      "ru0009086193",
+      "лихачев",
+      "зил",
+      "zil"
+    ]
+  },
+  "ZVEZ": {
+    "name": "ЗВЕЗДА ПАО",
+    "ticker_ord": "ZVEZ",
+    "isin_ord": "RU0009091300",
+    "level_ord": 3,
+    "lotsize_ord": 1000,
+    "minstep_ord": 0,
+    "issuesize_ord": 562020480,
+    "searchnames": [
+      "zvez",
+      "ru0009091300",
+      "звезда",
+      "zvezda"
+    ]
+  }
+}

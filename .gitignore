@@ -17,3 +17,6 @@ secrets/secrets.yaml
 src/sentiment/.rubert-tiny2-russian-financial-sentiment/*
 
 !**/.gitkeep
+
+!data/raw/companies_raw.json
+!data/reference/companies.json
