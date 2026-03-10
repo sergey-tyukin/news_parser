@@ -3,8 +3,6 @@
 /.venv/
 __pycache__/
 
-config/telegram_channels.yaml
-
 data/processed/*
 data/raw/*
 data/sessions/*
