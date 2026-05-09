@@ -7,6 +7,8 @@ data/processed/*
 data/raw/*
 data/sessions/*
 data/reference/*
+data/news.sqlite
+data/news_fav.sqlite
 
 logs/*
 
